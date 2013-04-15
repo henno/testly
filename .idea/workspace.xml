@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d12a641-6a6a-4734-be42-cbca74304ca2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Testly.iws" />
@@ -10,7 +9,7 @@
     <file path="/index.php" changelist="1d12a641-6a6a-4734-be42-cbca74304ca2" time="1366018608218" ignored="false" />
     <file path="/test.php" changelist="1d12a641-6a6a-4734-be42-cbca74304ca2" time="1366019047093" ignored="false" />
     <file path="/Request.php" changelist="1d12a641-6a6a-4734-be42-cbca74304ca2" time="1366019580312" ignored="false" />
-    <file path="/Dummy.txt" changelist="1d12a641-6a6a-4734-be42-cbca74304ca2" time="1366020069468" ignored="false" />
+    <file path="/Dummy.txt" changelist="1d12a641-6a6a-4734-be42-cbca74304ca2" time="1366020288093" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +41,7 @@
       <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="1546" selection-end="1546" vertical-scroll-proportion="0.52755904">
+            <state line="32" column="0" selection-start="1547" selection-end="1547" vertical-scroll-proportion="0.5748032">
               <folding />
             </state>
           </provider>
@@ -229,7 +228,11 @@
       <created>1366020078437</created>
       <updated>1366020078437</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="yo recipes">
+      <created>1366020314921</created>
+      <updated>1366020314921</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -341,7 +344,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="1546" selection-end="1546" vertical-scroll-proportion="0.52755904">
+        <state line="32" column="0" selection-start="1547" selection-end="1547" vertical-scroll-proportion="0.5748032">
           <folding />
         </state>
       </provider>

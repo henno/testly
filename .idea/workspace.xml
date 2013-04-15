@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d12a641-6a6a-4734-be42-cbca74304ca2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/Request.php" afterPath="$PROJECT_DIR$/classes/Request.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Testly.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.php" changelist="1d12a641-6a6a-4734-be42-cbca74304ca2" time="1366018608218" ignored="false" />
+    <file path="/index.php" changelist="1d12a641-6a6a-4734-be42-cbca74304ca2" time="1366022409921" ignored="false" />
     <file path="/test.php" changelist="1d12a641-6a6a-4734-be42-cbca74304ca2" time="1366019047093" ignored="false" />
-    <file path="/Request.php" changelist="1d12a641-6a6a-4734-be42-cbca74304ca2" time="1366019580312" ignored="false" />
-    <file path="/Dummy.txt" changelist="1d12a641-6a6a-4734-be42-cbca74304ca2" time="1366020529000" ignored="false" />
+    <file path="/Request.php" changelist="1d12a641-6a6a-4734-be42-cbca74304ca2" time="1366026026625" ignored="false" />
+    <file path="/Dummy.txt" changelist="1d12a641-6a6a-4734-be42-cbca74304ca2" time="1366020990734" ignored="false" />
+    <file path="/.htaccess.php" changelist="1d12a641-6a6a-4734-be42-cbca74304ca2" time="1366022866390" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,19 +42,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="0" selection-start="1547" selection-end="1547" vertical-scroll-proportion="0.5748032">
+            <state line="26" column="0" selection-start="1262" selection-end="1262" vertical-scroll-proportion="-7.586207">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Request.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Request.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/classes/Request.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="280" selection-end="280" vertical-scroll-proportion="-5.793103">
+            <state line="32" column="0" selection-start="740" selection-end="740" vertical-scroll-proportion="0.5748032">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".htaccess" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.htaccess">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="34" selection-start="179" selection-end="179" vertical-scroll-proportion="-7.448276">
               <folding />
             </state>
           </provider>
@@ -85,8 +98,9 @@
       <list>
         <option value="$USER_HOME$/Desktop/h5bp-html5-boilerplate-defe483/index.html" />
         <option value="$PROJECT_DIR$/test.php" />
-        <option value="$PROJECT_DIR$/classes/Request.php" />
+        <option value="$PROJECT_DIR$/classes/.htaccess.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/classes/Request.php" />
       </list>
     </option>
   </component>
@@ -104,7 +118,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -183,6 +197,11 @@
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\testly" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
@@ -236,7 +255,11 @@
       <created>1366020537734</created>
       <updated>1366020537734</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Remove Google Analytics code snippet">
+      <created>1366020993437</created>
+      <updated>1366020993437</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -268,7 +291,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="true" />
     <option name="myTodoPanelSettings">
       <value>
@@ -305,7 +328,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove Google analytics code  snippet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove Google Analytics code snippet" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -321,6 +344,7 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="yo recipes" />
     <MESSAGE value="Remove Google analytics code  snippet" />
+    <MESSAGE value="Remove Google Analytics code snippet" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -340,16 +364,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/Request.php">
+    <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="280" selection-end="280" vertical-scroll-proportion="-5.793103">
+        <state line="9" column="34" selection-start="179" selection-end="179" vertical-scroll-proportion="-7.448276">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="1547" selection-end="1547" vertical-scroll-proportion="0.5748032">
+        <state line="26" column="0" selection-start="1262" selection-end="1262" vertical-scroll-proportion="-7.586207">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Request.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="740" selection-end="740" vertical-scroll-proportion="0.5748032">
           <folding />
         </state>
       </provider>

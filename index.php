@@ -11,9 +11,8 @@ if (file_exists('controllers/'.$request->controller.'.php')){
 		if (isset($controller->requires_auth)){
 			$_user->require_auth();
 		}
-	$controller->{$request->action}();
+		$controller->{$request->action}();
 } else {
 	//var_dump($request->controller);
 	echo "The page '{$request->controller}' does not exist";
 }
-

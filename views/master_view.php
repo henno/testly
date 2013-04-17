@@ -16,8 +16,37 @@
 	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/main.css">
 	<script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
+	<style>
+		body {
+			padding-top: 60px;
+		}
+	</style>
 </head>
 <body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+			<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="brand" href="#">Project name</a>
+			<div class="nav-collapse collapse">
+				<ul class="nav">
+					<li class="active"><a href="<?= BASE_URL ?>tests">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="<?= BASE_URL ?>auth/logout">Logi välja</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</div>
+</div>
+<div>
+	<?php
+	require 'views/'.$request->controller.'_'.$request->action.'_view.php';
+	?>
+</div>
 <!--[if lt IE 7]>
 <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 <![endif]-->

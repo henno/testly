@@ -10,7 +10,7 @@
 class Request
 {
 
-	public $controller;
+	public $controller = DEFAULT_CONTROLLER;
 	public $action = 'index';
 	public $params = array();
 
@@ -24,6 +24,9 @@ class Request
 				$this->params = isset($path_info[0]) ? $path_info : NULL;
 			}
 		}
+	}
+	public function redirect($destination){
+		header('Location: '.BASE_URL.$destination);
 	}
 }
 

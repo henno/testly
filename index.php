@@ -14,6 +14,6 @@ if (file_exists('controllers/'.$request->controller.'.php')){
 	$controller->{$request->action}();
 } else {
 	//var_dump($request->controller);
-	echo "The page'{$request->controller}'does not exist";
+	echo "The page '{$request->controller}' does not exist";
 }
 

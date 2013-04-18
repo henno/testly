@@ -13,7 +13,6 @@
 	<meta name="author" content="">
 
 	<!-- Le styles -->
-	<link href="../assets/css/bootstrap.css" rel="stylesheet">
 	<style type="text/css">
 		body {
 			padding-top: 40px;
@@ -47,7 +46,7 @@
 		}
 
 	</style>
-	<link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
 
 	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>

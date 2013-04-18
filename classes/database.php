@@ -18,3 +18,10 @@ function get_one($sql, $debug = false){
 	// kas $result on array ja on rohkem kui 0 elementi, siis tagastab esimese elemendi
 	return is_array($result) && count($result) > 0 ? $result[0] : null;
 }
+function get_all($sql){
+	$q = mysql_query($sql) or exit(mysql_error());
+	while (($result[] = mysql_fetch_assoc($q)) || array_pop($result)){
+		;
+	}
+	return $result;
+}

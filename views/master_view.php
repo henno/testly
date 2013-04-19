@@ -20,7 +20,7 @@
 			padding-top: 60px;
 		}
 		body, html {
-			background: url('<?=BASE_URL?>assets/img/metal2.jpg');
+			background: url('<?=BASE_URL?>assets/img/iostexture.png');
 			height: 100%;
 		}
 		table.table-bordered tr {

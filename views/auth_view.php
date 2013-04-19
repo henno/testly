@@ -61,7 +61,7 @@
 	<link rel="shortcut icon" href="../assets/ico/favicon.png">
 </head>
 
-<body style="background-image: url(assets/img/metal2.jpg)">
+<body style="background-image: url(assets/img/iostexture.png)">
 
 <div class="container">
 

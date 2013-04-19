@@ -16,10 +16,14 @@
 		<td><?=$test['name']?></td>
 		<td><?=$test['username']?></td>
 		<td><?=substr($test['date'],0,10)?></td>
-		<td><i class="icon-pencil"></i>
+		<td>
+			<a href="<?=BASE_URL?>tests/edit/<?=$test['test_id']?>">
+				<i class="icon-pencil"></i></a>
+
 			<a href="#" onclick="if(!confirm('Oled kindel?')) return false;
-			remove_test_ajax(<?=$test['test_id']?>); return false">
-		<i class="icon-trash"></i>Kustuta</a></td>
+				remove_test_ajax(<?=$test['test_id']?>); return false">
+				<i class="icon-trash"></i>Kustuta</a>
+		</td>
 	</tr>
 	<? endforeach; endif ?>
 	</tbody>

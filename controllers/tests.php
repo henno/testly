@@ -16,4 +16,8 @@ class tests {
 		$result = q("UPDATE test SET deleted=1 WHERE test_id='$id'");
 		require 'views/master_view.php';
 	}
+	function edit(){
+		global $request;
+		require 'views/master_view.php';
+	}
 }

@@ -12,13 +12,14 @@
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-	<link rel="stylesheet" href="<?php BASE_URL ?>assets/css/normalize.css">
+	<link rel="stylesheet" href="<?=ASSETS_URL ?>css/normalize.css">
 	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
-	<script src="<?php BASE_URL ?>assets/js/vendor/modernizr-2.6.2.min.js"></script>
+	<script src="<?=ASSETS_URL ?>js/vendor/modernizr-2.6.2.min.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-	<script src="<?php BASE_URL ?>assets/js/plugins.js"></script>
-	<script src="<?php BASE_URL ?>assets/js/main.js"></script>
+	<script>window.jQuery || document.write('<script src="<?=ASSETS_URL ?>js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+	<script src="<?=ASSETS_URL ?>js/plugins.js"></script>
+	<script src="<?=ASSETS_URL ?>js/main.js"></script>
 	<script>BASE_URL = '<?=BASE_URL?>'</script>
 	<?if(!EMPTY($this->scripts)) : ?>
 	<?foreach($this->scripts as $script) : ?>

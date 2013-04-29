@@ -1,24 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" name="Default" comment="Add tests.js">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/body_bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/buttons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/header_bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/ie.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/jquery.confirm.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/tests_add_edit.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/auth_view.php" afterPath="$PROJECT_DIR$/views/auth_view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/master_view.php" afterPath="$PROJECT_DIR$/views/master_view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/tests.js" afterPath="$PROJECT_DIR$/assets/js/tests.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/tests.php" afterPath="$PROJECT_DIR$/controllers/tests.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/tests_edit_view.php" afterPath="$PROJECT_DIR$/views/tests_edit_view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/tests_index_view.php" afterPath="$PROJECT_DIR$/views/tests_index_view.php" />
+    <list default="true" id="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="testly.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367220418268" ignored="false" />
+    <file path="/Dummy.txt" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367245102515" ignored="false" />
     <file path="/.htaccess" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1366288981387" ignored="false" />
     <file path="/Request.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1366267589878" ignored="false" />
     <file path="/master_view.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1366897810382" ignored="false" />
@@ -121,7 +109,7 @@
       <file leaf-file-name="tests_add_edit.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/tests_add_edit.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="143" selection-start="2648" selection-end="2648" vertical-scroll-proportion="1.7046632">
+            <state line="15" column="1" selection-start="774" selection-end="774" vertical-scroll-proportion="0.6239168">
               <folding />
             </state>
           </provider>
@@ -156,6 +144,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitLogSettings">
+    <option name="myStructureFilterPaths" />
     <option name="myDateState">
       <MyDateState />
     </option>
@@ -462,14 +451,19 @@
       <created>1366628934869</created>
       <updated>1366628934869</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Lot of stuff.">
+      <created>1367245111442</created>
+      <updated>1367245111442</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32847896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32792208" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32847896" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -477,13 +471,12 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17045455" sideWeight="0.671521" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -531,7 +524,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add question-answer templates." />
+    <option name="LAST_COMMIT_MESSAGE" value="Lot of stuff." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -555,6 +548,7 @@
     <MESSAGE value="Create function edit to tests controller. Change javascript and css links - replace assets/ with ASSETS_URL. Create tests_edit_view." />
     <MESSAGE value="Add labels to Üldine in tests_edit_view.php" />
     <MESSAGE value="Add question-answer templates." />
+    <MESSAGE value="Lot of stuff." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -660,7 +654,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/tests_add_edit.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="143" selection-start="2648" selection-end="2648" vertical-scroll-proportion="1.7046632">
+        <state line="15" column="1" selection-start="774" selection-end="774" vertical-scroll-proportion="0.6239168">
           <folding />
         </state>
       </provider>

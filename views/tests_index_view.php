@@ -1,5 +1,5 @@
 <p>
-	<a class="btn btn-large btn-primary" href="http://google.com">Lisa uus test</a>
+	<a class="btn btn-large btn-primary" href="#" id="add_test">Lisa uus test</a>
 </p>
 <table id="tests-table" class="table table-bordered table-striped">
 	<thead>
@@ -19,12 +19,16 @@
 		<td>
 			<a href="<?=BASE_URL?>tests/edit/<?=$test['test_id']?>">
 				<i class="icon-pencil"></i></a>
-			<?if (!empty($status) && $status == 'teacher'):?>
+
 			<a href="#" onclick="if(!confirm('Oled kindel?')) return false;
 				remove_test_ajax(<?=$test['test_id']?>); return false">
-				<i class="icon-trash"></i>Kustuta</a><?endif?>
+				<i class="icon-trash"></i>Kustuta</a>
 		</td>
 	</tr>
 	<? endforeach; endif ?>
 	</tbody>
 </table>
+<link rel="stylesheet" type="text/css" href="<?=ASSETS_URL?>css/jquery.confirm.css" />
+<div class="item" style="display:none">y
+	<div class="delete">x</div>
+</div>

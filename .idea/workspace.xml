@@ -1,34 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" name="Default" comment="Comment Request.php.">
-      <change type="DELETED" beforePath="C:\xampp\htdocs\testly\assets\css\main.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\testly\controllers\tests_index_view.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
+    <list default="true" id="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" name="Default" comment="Add tests.js">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/body_bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/buttons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/header_bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/ie.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/jquery.confirm.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/tests_add_edit.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/auth_view.php" afterPath="$PROJECT_DIR$/views/auth_view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.php" afterPath="$PROJECT_DIR$/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/database.php" afterPath="$PROJECT_DIR$/classes/database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/master_view.php" afterPath="$PROJECT_DIR$/views/master_view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/testly.iml" afterPath="$PROJECT_DIR$/.idea/testly.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/testly.sql" afterPath="$PROJECT_DIR$/doc/testly.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/tests.js" afterPath="$PROJECT_DIR$/assets/js/tests.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/tests.php" afterPath="$PROJECT_DIR$/controllers/tests.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/tests_edit_view.php" afterPath="$PROJECT_DIR$/views/tests_edit_view.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/tests_index_view.php" afterPath="$PROJECT_DIR$/views/tests_index_view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="testly.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1366280744008" ignored="false" />
+    <file path="/Dummy.txt" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367220418268" ignored="false" />
     <file path="/.htaccess" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1366288981387" ignored="false" />
     <file path="/Request.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1366267589878" ignored="false" />
-    <file path="/master_view.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1366286197213" ignored="false" />
-    <file path="/tests_index_view.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1366289362492" ignored="false" />
-    <file path="/tests.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1366287960221" ignored="false" />
-    <file path="/database.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1366288406216" ignored="false" />
+    <file path="/master_view.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1366897810382" ignored="false" />
+    <file path="/tests_index_view.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367150284626" ignored="false" />
+    <file path="/tests.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367239429870" ignored="false" />
+    <file path="/database.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1366363872748" ignored="false" />
+    <file path="/auth_view.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1366356010131" ignored="false" />
+    <file path="/tests_remove_view.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1366361522147" ignored="false" />
+    <file path="/tests.js" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367151531391" ignored="false" />
+    <file path="/tests_edit_view.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367243159989" ignored="false" />
+    <file path="/a.dummy" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367240799018" ignored="false" />
+    <file path="/tests_add_edit.js" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367245043415" ignored="false" />
+    <file path="/tests_add_view.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367234668990" ignored="false" />
+    <file path="/jquery.confirm.css" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367147990348" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,10 +52,58 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="tests_index_view.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="tests_index_view.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/tests_index_view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="22" selection-start="240" selection-end="240" vertical-scroll-proportion="0.22140221">
+            <state line="9" column="26" selection-start="248" selection-end="248" vertical-scroll-proportion="-7.448276">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.confirm.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/css/jquery.confirm.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="1" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="normalize.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/css/normalize.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tests_edit_view.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/tests_edit_view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="53" column="35" selection-start="1834" selection-end="1834" vertical-scroll-proportion="-8.551724">
+              <folding>
+                <element signature="tag#script#0" expanded="false" />
+                <element signature="e#139#166#0" expanded="false" />
+                <element signature="tag#div#0" expanded="false" />
+                <element signature="tag#ul#0;tag#div#1" expanded="false" />
+                <element signature="tag#div#0;tag#div#1" expanded="false" />
+                <element signature="tag#form#0;tag#div#0;tag#div#1" expanded="false" />
+                <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#3;n#tr#0;n#table#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+                <element signature="e#1209#1459#0" expanded="false" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#!!top" expanded="true" />
+                <element signature="tag#div#2;tag#div#1" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tests_remove_view.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/tests_remove_view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="6" selection-start="58" selection-end="58" vertical-scroll-proportion="-2.4827585">
               <folding />
             </state>
           </provider>
@@ -60,64 +112,26 @@
       <file leaf-file-name="tests.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/tests.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="1" selection-start="228" selection-end="228" vertical-scroll-proportion="-9.103448">
+            <state line="26" column="79" selection-start="790" selection-end="790" vertical-scroll-proportion="-10.413794">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="auth.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/auth.php">
+      <file leaf-file-name="tests_add_edit.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/js/tests_add_edit.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="9" selection-start="202" selection-end="202" vertical-scroll-proportion="-7.448276">
+            <state line="75" column="143" selection-start="2648" selection-end="2648" vertical-scroll-proportion="1.7046632">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Request.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classes/Request.php">
+      <file leaf-file-name="tests.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/tests.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="31" selection-start="503" selection-end="503" vertical-scroll-proportion="-2.4827585">
+            <state line="34" column="26" selection-start="583" selection-end="1074" vertical-scroll-proportion="0.0">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classes/user.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="20" selection-start="383" selection-end="383" vertical-scroll-proportion="-11.586206">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="database.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classes/database.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="9" selection-start="749" selection-end="749" vertical-scroll-proportion="-8.75862">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".htaccess" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.htaccess">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="26" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="auth_view.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/auth_view.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="7" selection-start="1856" selection-end="1856" vertical-scroll-proportion="-50.482758">
-              <folding>
-                <element signature="n#style#0;n#body#0;n#html#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -125,7 +139,7 @@
       <file leaf-file-name="master_view.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/master_view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="38" selection-start="886" selection-end="886" vertical-scroll-proportion="-8.275862">
+            <state line="57" column="21" selection-start="2059" selection-end="2059" vertical-scroll-proportion="-37.275864">
               <folding />
             </state>
           </provider>
@@ -149,17 +163,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config.php" />
-        <option value="$PROJECT_DIR$/classes/Request.php" />
-        <option value="$PROJECT_DIR$/views/auth_view.php" />
-        <option value="$PROJECT_DIR$/controllers/tests_index_view.php" />
         <option value="$PROJECT_DIR$/classes/user.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/views/master_view.php" />
-        <option value="$PROJECT_DIR$/classes/database.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
-        <option value="$PROJECT_DIR$/controllers/tests.php" />
+        <option value="$PROJECT_DIR$/views/tests_remove_view.php" />
+        <option value="$PROJECT_DIR$/classes/database.php" />
+        <option value="$PROJECT_DIR$/config.php" />
+        <option value="$PROJECT_DIR$/views/auth_view.php" />
+        <option value="$PROJECT_DIR$/assets/css/jquery.confirm.css.html" />
+        <option value="$PROJECT_DIR$/assets/css/jquery.confirm.css" />
+        <option value="$PROJECT_DIR$/views/master_view.php" />
         <option value="$PROJECT_DIR$/views/tests_index_view.php" />
+        <option value="$PROJECT_DIR$/assets/js/tests.js" />
+        <option value="$PROJECT_DIR$/views/tests_add_view.php" />
+        <option value="$PROJECT_DIR$/controllers/tests.php" />
+        <option value="$PROJECT_DIR$/views/tests_edit_view.php" />
+        <option value="$PROJECT_DIR$/assets/js/tests_add_edit.js" />
       </list>
     </option>
   </component>
@@ -170,6 +189,20 @@
     <option name="width" value="1382" />
     <option name="height" value="754" />
   </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
@@ -177,7 +210,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -283,6 +316,10 @@
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -302,6 +339,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testly" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testly" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -312,11 +367,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="preferences.fileTypes" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\testly\assets\css" />
+      <recent name="C:\xampp\htdocs\testly\assets\img" />
       <recent name="C:\xampp\htdocs\testly\views" />
     </key>
   </component>
@@ -328,9 +386,36 @@
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value="SHOW_INHERITED_FROM_OBJECT,SHOW_INHERITED,SHOW_FIELDS" />
+  </component>
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" name="Default" comment="" />
@@ -353,28 +438,52 @@
       <created>1366280751858</created>
       <updated>1366280751859</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Comment. Add tests from database.">
+      <created>1366289798003</created>
+      <updated>1366289798003</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add tables question, answer. Add tests_remove_view. Add functions q, remove.">
+      <created>1366366379150</created>
+      <updated>1366366379150</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add tests.js">
+      <created>1366375427374</created>
+      <updated>1366375427374</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Create function edit to tests controller. Change javascript and css links - replace assets/ with ASSETS_URL. Create tests_edit_view.">
+      <created>1366378736006</created>
+      <updated>1366378736006</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add labels to Üldine in tests_edit_view.php">
+      <created>1366624194772</created>
+      <updated>1366624194772</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add question-answer templates.">
+      <created>1366628934869</created>
+      <updated>1366628934869</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32847896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32847896" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26136363" sideWeight="0.671521" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17045455" sideWeight="0.671521" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -422,7 +531,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Comment index.php, database.php, user.php." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add question-answer templates." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -440,116 +549,118 @@
     <MESSAGE value="Change txt file to php file." />
     <MESSAGE value="Comment Request.php." />
     <MESSAGE value="Comment index.php, database.php, user.php." />
+    <MESSAGE value="Comment. Add tests from database." />
+    <MESSAGE value="Add tables question, answer. Add tests_remove_view. Add functions q, remove." />
+    <MESSAGE value="Add tests.js" />
+    <MESSAGE value="Create function edit to tests controller. Change javascript and css links - replace assets/ with ASSETS_URL. Create tests_edit_view." />
+    <MESSAGE value="Add labels to Üldine in tests_edit_view.php" />
+    <MESSAGE value="Add question-answer templates." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/auth_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/master_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="7" selection-start="147" selection-end="147" vertical-scroll-proportion="-3.310345">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/mysql.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="148" column="9" selection-start="5421" selection-end="5421" vertical-scroll-proportion="0.35160682">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="20" selection-start="383" selection-end="383" vertical-scroll-proportion="-11.586206">
-          <folding />
-        </state>
+        <state line="7" column="2" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="47" selection-start="389" selection-end="389" vertical-scroll-proportion="-8.275862">
-          <folding />
-        </state>
+        <state line="4" column="27" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/doc/testly.sql">
+    <entry file="file://$PROJECT_DIR$/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="25" selection-start="250" selection-end="250" vertical-scroll-proportion="0.04606526">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/Request.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="31" selection-start="503" selection-end="503" vertical-scroll-proportion="-2.4827585">
-          <folding />
-        </state>
+        <state line="18" column="31" selection-start="503" selection-end="503" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/master_view.php">
+    <entry file="file://$PROJECT_DIR$/assets/js/plugins.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="38" selection-start="886" selection-end="886" vertical-scroll-proportion="-8.275862">
-          <folding />
-        </state>
+        <state line="10" column="32" selection-start="439" selection-end="439" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/auth_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="7" selection-start="1856" selection-end="1856" vertical-scroll-proportion="-50.482758">
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
+        <state line="58" column="63" selection-start="1891" selection-end="1891" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/auth.php">
+    <entry file="file://$PROJECT_DIR$/assets/css/normalize.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="9" selection-start="202" selection-end="202" vertical-scroll-proportion="-7.448276">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/database.php">
+    <entry file="file://$PROJECT_DIR$/assets/css/jquery.confirm.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="9" selection-start="749" selection-end="749" vertical-scroll-proportion="-8.75862">
+        <state line="51" column="1" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
+    <entry file="file://$PROJECT_DIR$/views/tests_remove_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="26" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/tests.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="1" selection-start="228" selection-end="228" vertical-scroll-proportion="-9.103448">
+        <state line="3" column="6" selection-start="58" selection-end="58" vertical-scroll-proportion="-2.4827585">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/tests_index_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="22" selection-start="240" selection-end="240" vertical-scroll-proportion="0.22140221">
+        <state line="9" column="26" selection-start="248" selection-end="248" vertical-scroll-proportion="-7.448276">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/master_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="21" selection-start="2059" selection-end="2059" vertical-scroll-proportion="-37.275864">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/tests.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="79" selection-start="790" selection-end="790" vertical-scroll-proportion="-10.413794">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/tests.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="26" selection-start="583" selection-end="1074" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/tests_edit_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="35" selection-start="1834" selection-end="1834" vertical-scroll-proportion="-8.551724">
+          <folding>
+            <element signature="tag#script#0" expanded="false" />
+            <element signature="e#139#166#0" expanded="false" />
+            <element signature="tag#div#0" expanded="false" />
+            <element signature="tag#ul#0;tag#div#1" expanded="false" />
+            <element signature="tag#div#0;tag#div#1" expanded="false" />
+            <element signature="tag#form#0;tag#div#0;tag#div#1" expanded="false" />
+            <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#3;n#tr#0;n#table#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="e#1209#1459#0" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="tag#div#2;tag#div#1" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/tests_add_edit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="143" selection-start="2648" selection-end="2648" vertical-scroll-proportion="1.7046632">
           <folding />
         </state>
       </provider>

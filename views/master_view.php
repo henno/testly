@@ -12,19 +12,19 @@
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-	<link rel="stylesheet" href="<?=ASSETS_URL ?>css/normalize.css">
 	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
 	<script src="<?=ASSETS_URL ?>js/vendor/modernizr-2.6.2.min.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="<?=ASSETS_URL ?>js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+	<script>window.jQuery || document.write('<script src="<?=ASSETS_URL?>js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
-	<script src="<?=ASSETS_URL ?>js/plugins.js"></script>
-	<script src="<?=ASSETS_URL ?>js/main.js"></script>
+	<script src="<?=ASSETS_URL?>js/plugins.js"></script>
+	<script src="<?=ASSETS_URL?>js/main.js"></script>
 	<script>BASE_URL = '<?=BASE_URL?>'</script>
+
 	<?if(!EMPTY($this->scripts)) : ?>
-	<?foreach($this->scripts as $script) : ?>
-	<script src="<?=ASSETS_URL?>js/<?=$script?>"></script>
-	<?endforeach?>
+		<?foreach($this->scripts as $script) : ?>
+			<script src="<?=ASSETS_URL?>js/<?=$script?>"></script>
+		<?endforeach?>
 	<?endif?>
 
 	<style>
@@ -49,11 +49,12 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="brand" href="#">Project name</a>
+			<a class="brand" href="#">Testly</a>
 			<div class="nav-collapse collapse">
 				<ul class="nav">
-					<li class="active"><a href="<?= BASE_URL ?>tests">Home</a></li>
-					<li><a href="<?= BASE_URL ?>auth/logout">Logi välja</a></li>
+					<li class="active"><a href="<?=BASE_URL?>tests">Testid</a></li>
+					<li><a href="#about">Info</a></li>
+					<li><a href="<?=BASE_URL?>auth/logout">Logi välja</a></li>
 				</ul>
 			</div><!--/.nav-collapse -->
 		</div>

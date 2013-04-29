@@ -1,8 +1,3 @@
-<html>
-<head>
-
-</head>
-<body>
 <!DOCTYPE html>
 <html lang="en">
 <head>

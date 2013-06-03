@@ -66,8 +66,7 @@ $(document).ready(function () {
 			'<div id="confirmOverlay">',
 			'<div id="confirmBox">',
 			'<h1>', params.title, '</h1>',
-			'<input name="test_name" type="text">',
-			'<p>', params.message, '</p>',
+			'<div style="text-align: center"><input style="margin: 30px" name="test_name" type="text"></div>',
 			'<div id="confirmButtons">',
 			buttonHTML,
 			'</div></div></div>'

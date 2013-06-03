@@ -6,6 +6,7 @@ class tests {
 		$this->scripts[] = 'tests.js';
 		global $request;
 		global $_user;
+		global $username;
 		$tests = get_all("SELECT * FROM test NATURAL JOIN user WHERE test.deleted=0");
 		$id = $_SESSION['user_id'];
 		$status = get_one("SELECT status FROM user WHERE user_id='$id'");

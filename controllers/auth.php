@@ -4,6 +4,7 @@ class auth {
 	function index(){
 		global $request;
 		global $errors;
+		global $username;
 		if (isset($_SESSION['session_expired'])){
 			$errors[] = "Sessioon on aegunud!";
 			unset($_SESSION['session_expired']);

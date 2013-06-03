@@ -1,26 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" name="Default" comment="">
+    <list default="true" id="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" name="Default" comment="Lot of stuff.">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/auth.php" afterPath="$PROJECT_DIR$/controllers/auth.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/tests.js" afterPath="$PROJECT_DIR$/assets/js/tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/tests.php" afterPath="$PROJECT_DIR$/controllers/tests.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/tests_edit_view.php" afterPath="$PROJECT_DIR$/views/tests_edit_view.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="testly.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367245102515" ignored="false" />
-    <file path="/.htaccess" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1366288981387" ignored="false" />
+    <file path="/Dummy.txt" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1370243582661" ignored="false" />
+    <file path="/.htaccess" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1369125979859" ignored="false" />
     <file path="/Request.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1366267589878" ignored="false" />
-    <file path="/master_view.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1366897810382" ignored="false" />
-    <file path="/tests_index_view.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367150284626" ignored="false" />
-    <file path="/tests.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367239429870" ignored="false" />
+    <file path="/master_view.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1368187244184" ignored="false" />
+    <file path="/tests_index_view.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367476903058" ignored="false" />
+    <file path="/tests.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367477442120" ignored="false" />
     <file path="/database.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1366363872748" ignored="false" />
-    <file path="/auth_view.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1366356010131" ignored="false" />
+    <file path="/auth_view.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367432928946" ignored="false" />
     <file path="/tests_remove_view.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1366361522147" ignored="false" />
-    <file path="/tests.js" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367151531391" ignored="false" />
-    <file path="/tests_edit_view.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367243159989" ignored="false" />
-    <file path="/a.dummy" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367240799018" ignored="false" />
-    <file path="/tests_add_edit.js" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367245043415" ignored="false" />
+    <file path="/tests.js" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1370242310393" ignored="false" />
+    <file path="/tests_edit_view.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367404630857" ignored="false" />
+    <file path="/a.dummy" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1369125398567" ignored="false" />
+    <file path="/tests_add_edit.js" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367674313992" ignored="false" />
     <file path="/tests_add_view.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367234668990" ignored="false" />
-    <file path="/jquery.confirm.css" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367147990348" ignored="false" />
+    <file path="/jquery.confirm.css" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1368102357773" ignored="false" />
+    <file path="$PROJECT_DIR$/../veebipood/config.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367402850947" ignored="false" />
+    <file path="$PROJECT_DIR$/../veebipood/controllers/products.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367429262932" ignored="false" />
+    <file path="/products.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367429262553" ignored="false" />
+    <file path="$PROJECT_DIR$/../veebipood/.htaccess" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367312415135" ignored="false" />
+    <file path="/normalize.css" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367313551747" ignored="false" />
+    <file path="$PROJECT_DIR$/../veebipood/views/products_index_view.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367695259676" ignored="false" />
+    <file path="/products_index_view.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367867190454" ignored="false" />
+    <file path="$PROJECT_DIR$/../veebipood/views/products_edit_view.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367416743886" ignored="false" />
+    <file path="/products_edit_view.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367414931598" ignored="false" />
+    <file path="$PROJECT_DIR$/../veebipood/views/master_view.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1368103925536" ignored="false" />
+    <file path="$PROJECT_DIR$/../veebipood/controllers/clients.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367326555450" ignored="false" />
+    <file path="/clients.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367326554785" ignored="false" />
+    <file path="$PROJECT_DIR$/../veebipood/views/clients_index_view.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367425679189" ignored="false" />
+    <file path="/clients_index_view.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367416730422" ignored="false" />
+    <file path="$PROJECT_DIR$/../veebipood/controllers/invoices.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367690624189" ignored="false" />
+    <file path="/invoices.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367690622532" ignored="false" />
+    <file path="$PROJECT_DIR$/../veebipood/assets/css/jquery.confirm.css" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1368102418970" ignored="false" />
+    <file path="$PROJECT_DIR$/../veebipood/assets/js/products.js" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367675052995" ignored="false" />
+    <file path="/products.js" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367674818860" ignored="false" />
+    <file path="$PROJECT_DIR$/../veebipood/views/auth_view.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367432978301" ignored="false" />
+    <file path="$PROJECT_DIR$/../veebipood/controllers/auth.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367667553366" ignored="false" />
+    <file path="/auth.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367935258265" ignored="false" />
+    <file path="$PROJECT_DIR$/../veebipood/views/invoices_index_view.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367689789321" ignored="false" />
+    <file path="/invoices_index_view.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367689481209" ignored="false" />
+    <file path="$PROJECT_DIR$/../veebipood/classes/user.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367434152390" ignored="false" />
+    <file path="/user.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367434106149" ignored="false" />
+    <file path="$PROJECT_DIR$/../veebipood/.idea/workspace.xml" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367695295873" ignored="false" />
+    <file path="$PROJECT_DIR$/../veebipood/views/invoices_info_view.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367690589496" ignored="false" />
+    <file path="/invoices_info_view.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367690527089" ignored="false" />
+    <file path="$PROJECT_DIR$/../routerboard/controllers/products.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367865579946" ignored="false" />
+    <file path="$PROJECT_DIR$/../routerboard/views/products_index_view.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1367867197653" ignored="false" />
+    <file path="$PROJECT_DIR$/../gaasitanklad/controllers/company.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1368091371303" ignored="false" />
+    <file path="/company.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1368091367586" ignored="false" />
+    <file path="$PROJECT_DIR$/../gaasitanklad/views/company_all_view.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1368091533271" ignored="false" />
+    <file path="$PROJECT_DIR$/../veebipood/views/basket_index_view.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1368104597147" ignored="false" />
+    <file path="/basket_index_view.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1368104585880" ignored="false" />
+    <file path="$PROJECT_DIR$/../routerboard/assets/js/backend.js" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1368189678757" ignored="false" />
+    <file path="/backend.js" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1368189674922" ignored="false" />
+    <file path="$PROJECT_DIR$/../routerboard/assets/css/jquery.confirm.css" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1368187972252" ignored="false" />
+    <file path="$PROJECT_DIR$/../routerboard/views/master_view.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1368187244184" ignored="false" />
+    <file path="$PROJECT_DIR$/../routerboard/controllers/backend.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1368619836019" ignored="false" />
+    <file path="/backend.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1368619774279" ignored="false" />
+    <file path="$PROJECT_DIR$/../routerboard/views/backend_edit_view.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1368620070797" ignored="false" />
+    <file path="/backend_edit_view.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1368620058374" ignored="false" />
+    <file path="$PROJECT_DIR$/../routerboard/assets/js/backend_edit.js" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1368620751458" ignored="false" />
+    <file path="/backend_edit.js" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1368620733039" ignored="false" />
+    <file path="$PROJECT_DIR$/../tournament-master/config.php.default" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1369125372230" ignored="false" />
+    <file path="/config.php.default" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1369125351741" ignored="false" />
+    <file path="$PROJECT_DIR$/../tournament-master/.htaccess" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1369125996817" ignored="false" />
+    <file path="$PROJECT_DIR$/../tournament-master/.gitignore" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1369126200708" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,28 +94,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="tests.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/tests.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="23" selection-start="1076" selection-end="1076" vertical-scroll-proportion="-7.827586">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="tests_index_view.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/tests_index_view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="26" selection-start="248" selection-end="248" vertical-scroll-proportion="-7.448276">
+            <state line="28" column="12" selection-start="795" selection-end="795" vertical-scroll-proportion="-23.172413">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery.confirm.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/jquery.confirm.css">
+      <file leaf-file-name="tests.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/js/tests.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="1" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="67" column="42" selection-start="1820" selection-end="1820" vertical-scroll-proportion="1.3694916">
+              <folding>
+                <marker date="1370242315016" expanded="true" signature="1837:1855" placeholder="..." />
+                <marker date="1370242315016" expanded="true" signature="1871:1883" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="normalize.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/normalize.css">
+      <file leaf-file-name="tests_add_edit.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/tests_add_edit.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="47" column="23" selection-start="1782" selection-end="1782" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -70,64 +136,7 @@
       <file leaf-file-name="tests_edit_view.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/tests_edit_view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="35" selection-start="1834" selection-end="1834" vertical-scroll-proportion="-8.551724">
-              <folding>
-                <element signature="tag#script#0" expanded="false" />
-                <element signature="e#139#166#0" expanded="false" />
-                <element signature="tag#div#0" expanded="false" />
-                <element signature="tag#ul#0;tag#div#1" expanded="false" />
-                <element signature="tag#div#0;tag#div#1" expanded="false" />
-                <element signature="tag#form#0;tag#div#0;tag#div#1" expanded="false" />
-                <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#3;n#tr#0;n#table#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-                <element signature="e#1209#1459#0" expanded="false" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#!!top" expanded="true" />
-                <element signature="tag#div#2;tag#div#1" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tests_remove_view.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/tests_remove_view.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="6" selection-start="58" selection-end="58" vertical-scroll-proportion="-2.4827585">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tests.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/tests.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="79" selection-start="790" selection-end="790" vertical-scroll-proportion="-10.413794">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tests_add_edit.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets/js/tests_add_edit.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="1" selection-start="774" selection-end="774" vertical-scroll-proportion="0.6239168">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tests.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/tests.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="26" selection-start="583" selection-end="1074" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="master_view.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/master_view.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="21" selection-start="2059" selection-end="2059" vertical-scroll-proportion="-37.275864">
+            <state line="5" column="9" selection-start="178" selection-end="178" vertical-scroll-proportion="-0.82758623">
               <folding />
             </state>
           </provider>
@@ -152,22 +161,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/classes/user.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/views/tests_remove_view.php" />
         <option value="$PROJECT_DIR$/classes/database.php" />
         <option value="$PROJECT_DIR$/config.php" />
-        <option value="$PROJECT_DIR$/views/auth_view.php" />
         <option value="$PROJECT_DIR$/assets/css/jquery.confirm.css.html" />
         <option value="$PROJECT_DIR$/assets/css/jquery.confirm.css" />
         <option value="$PROJECT_DIR$/views/master_view.php" />
-        <option value="$PROJECT_DIR$/views/tests_index_view.php" />
-        <option value="$PROJECT_DIR$/assets/js/tests.js" />
         <option value="$PROJECT_DIR$/views/tests_add_view.php" />
-        <option value="$PROJECT_DIR$/controllers/tests.php" />
+        <option value="$PROJECT_DIR$/assets/css/normalize.css" />
+        <option value="$PROJECT_DIR$/views/auth_view.php" />
         <option value="$PROJECT_DIR$/views/tests_edit_view.php" />
+        <option value="$PROJECT_DIR$/controllers/tests.php" />
+        <option value="$PROJECT_DIR$/views/tests_index_view.php" />
         <option value="$PROJECT_DIR$/assets/js/tests_add_edit.js" />
+        <option value="$PROJECT_DIR$/controllers/auth.php" />
+        <option value="$PROJECT_DIR$/assets/js/tests.js" />
       </list>
     </option>
   </component>
@@ -218,6 +227,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -288,20 +298,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="classes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testly" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testly" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -321,10 +317,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -348,13 +340,13 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="preferences.fileTypes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../routerboard" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.searchVisible" value="true" />
@@ -455,20 +447,22 @@
       <created>1367245111442</created>
       <updated>1367245111442</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Lot of stuff.">
+      <created>1367245356774</created>
+      <updated>1367245356774</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32792208" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32847896" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17045455" sideWeight="0.671521" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2439394" sideWeight="0.6720779" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -477,6 +471,8 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32686085" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -554,108 +550,104 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config.php">
+    <entry file="file://$PROJECT_DIR$/controllers/auth.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="2" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0" />
+        <state line="15" column="0" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="27" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0" />
+    <entry file="file://$PROJECT_DIR$/assets/img/body_bg.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+    <entry file="file://$PROJECT_DIR$/assets/img/header_bg.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/Request.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="31" selection-start="503" selection-end="503" vertical-scroll-proportion="0.0" />
+    <entry file="file://$PROJECT_DIR$/assets/img/ie.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/plugins.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="32" selection-start="439" selection-end="439" vertical-scroll-proportion="0.0" />
+    <entry file="file://$PROJECT_DIR$/assets/img/iostexture.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/auth_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="63" selection-start="1891" selection-end="1891" vertical-scroll-proportion="0.0" />
+    <entry file="file://$PROJECT_DIR$/assets/img/metal2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/normalize.css">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/jquery.confirm.css">
+    <entry file="file://$PROJECT_DIR$/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="1" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/tests_remove_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="6" selection-start="58" selection-end="58" vertical-scroll-proportion="-2.4827585">
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/assets/img/buttons.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/tests_index_view.php">
+    <entry file="file://$PROJECT_DIR$/views/tests_edit_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="26" selection-start="248" selection-end="248" vertical-scroll-proportion="-7.448276">
+        <state line="5" column="9" selection-start="178" selection-end="178" vertical-scroll-proportion="-0.82758623">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/master_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="21" selection-start="2059" selection-end="2059" vertical-scroll-proportion="-37.275864">
+        <state line="58" column="40" selection-start="2091" selection-end="2091" vertical-scroll-proportion="0.043636363">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/jquery.confirm.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="12" selection-start="389" selection-end="389" vertical-scroll-proportion="0.041450776">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/tests.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="79" selection-start="790" selection-end="790" vertical-scroll-proportion="-10.413794">
+        <state line="35" column="23" selection-start="1076" selection-end="1076" vertical-scroll-proportion="-7.827586">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/tests_index_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="12" selection-start="795" selection-end="795" vertical-scroll-proportion="-23.172413">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/tests_add_edit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="23" selection-start="1782" selection-end="1782" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/tests.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="26" selection-start="583" selection-end="1074" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/tests_edit_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="35" selection-start="1834" selection-end="1834" vertical-scroll-proportion="-8.551724">
+        <state line="67" column="42" selection-start="1820" selection-end="1820" vertical-scroll-proportion="1.3694916">
           <folding>
-            <element signature="tag#script#0" expanded="false" />
-            <element signature="e#139#166#0" expanded="false" />
-            <element signature="tag#div#0" expanded="false" />
-            <element signature="tag#ul#0;tag#div#1" expanded="false" />
-            <element signature="tag#div#0;tag#div#1" expanded="false" />
-            <element signature="tag#form#0;tag#div#0;tag#div#1" expanded="false" />
-            <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#3;n#tr#0;n#table#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-            <element signature="e#1209#1459#0" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#!!top" expanded="true" />
-            <element signature="tag#div#2;tag#div#1" expanded="false" />
+            <marker date="1370242315016" expanded="true" signature="1837:1855" placeholder="..." />
+            <marker date="1370242315016" expanded="true" signature="1871:1883" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/tests_add_edit.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="1" selection-start="774" selection-end="774" vertical-scroll-proportion="0.6239168">
-          <folding />
         </state>
       </provider>
     </entry>

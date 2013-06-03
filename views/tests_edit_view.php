@@ -5,7 +5,7 @@
 	});
 </script>
 <div style="clear: both; padding-bottom: 7px;">
-	<button class="btn btn btn-primary" type="button" onclick="save_test_changes()">Salvesta</button>
+	<button class=" btn btn-primary" type="button" onclick="save_test_changes()">Salvesta</button>
 </div>
 <div id="tabs">
 	<ul>

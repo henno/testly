@@ -6,7 +6,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title></title>
+	<title>Testly</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width">
 
@@ -49,7 +49,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="brand" href="#">Testly</a>
+			<h1 class="page-header" style="border:none;">Testly</h1>
 			<div class="nav-collapse collapse">
 				<ul class="nav">
 					<li class="active"><a href="<?=BASE_URL?>tests">Testid</a></li>

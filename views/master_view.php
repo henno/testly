@@ -53,7 +53,7 @@
 			<div class="nav-collapse collapse">
 				<ul class="nav">
 					<li class="active"><a href="<?=BASE_URL?>tests">Testid</a></li>
-					<li><a href="#about">Info</a></li>
+					<li><a href="<?=BASE_URL?>info">Info</a></li>
 					<li><a href="<?=BASE_URL?>auth/logout">Logi välja</a></li>
 				</ul>
 			</div><!--/.nav-collapse -->

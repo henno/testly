@@ -49,7 +49,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<h1 class="page-header" style="border:none;">Testly</h1>
+			<h1 class="page-header" style="border:none; ">Testly</h1>
 			<div class="nav-collapse collapse">
 				<ul class="nav">
 					<li class="active"><a href="<?=BASE_URL?>tests">Testid</a></li>

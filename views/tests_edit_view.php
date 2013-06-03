@@ -52,11 +52,6 @@
 			<option value="4">Fill in the blank</option>
 		</select>
 			<div id="answer_options">
-				<label>Sisesta kaks vastust ja märgi ära õige vastus</label>
-				<input type="radio" id="answer_correctness[0]" value="0" checked="checked">
-				<textarea id="answer_text[0]">True</textarea>
-				<input type="radio" id="answer_correctness[1]" value="1">
-				<textarea id="answer_text[1]">False</textarea>
 			</div>
 		<div style="clear: both; padding-bottom: 7px;">
 			<button class="btn btn btn-primary" type="button" onclick="add_question()">Salvesta</button>

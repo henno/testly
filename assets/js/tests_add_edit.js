@@ -1,4 +1,5 @@
 var current_type_id = 2;
+var ylakoma = "'";
 
 function addMultipleChoice() {
 	var html = '<div class="answer-option"><input type="radio" name="mc.correct" value="<id>">&nbsp;<textarea name="mc.answer.<id>"></textarea></div>';
@@ -70,20 +71,18 @@ $(function () {
 		switch ($(this).val().trim()) {
 			case '1':
 				// true/false
-				$('#answer_options input').attr('type', 'radio');
-				$('#answer_options textarea').remove();
-				$('#answer_options input').remove();
-				$('#answer_options').append('<input type="radio" id="answer_option[0]">&nbsp;<textarea id="answer_text[0]">Jah</textarea><br />');
-				$('#answer_options').append('<input type="radio" id="answer_option[1]">&nbsp;<textarea id="answer_text[1]">Ei</textarea>');
+				$('#answer_options div').remove();
+				$('#answer_options').append('<div style="padding: 5px"><input style="margin: 5px; margin-bottom: 9px" type="radio" id="answer_option[0]" name="tfselected">Jah</div>');
+				$('#answer_options').append('<div style="padding: 5px"><input style="margin: 5px; margin-bottom: 9px" type="radio" id="answer_option[1]" name="tfselected">Ei</div>');
 				break;
 			case '2':
-				x = "Today it's Monday";
+				$('#answer_options div').remove();
 				break;
 			case '3':
-				x = "Today it's Tuesday";
+				$('#answer_options div').remove();
 				break;
 			case '4':
-				x = "Today it's Wednesday";
+				$('#answer_options div').remove();
 				break;
 			default:
 				alert('Viga');

@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" name="Default" comment="Lot of stuff.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/auth.php" afterPath="$PROJECT_DIR$/controllers/auth.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/tests.js" afterPath="$PROJECT_DIR$/assets/js/tests.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/tests.php" afterPath="$PROJECT_DIR$/controllers/tests.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/tests_edit_view.php" afterPath="$PROJECT_DIR$/views/tests_edit_view.php" />
+    <list default="true" id="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" name="Default" comment="Database dump">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/testly.sql" afterPath="$PROJECT_DIR$/doc/testly.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="testly.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1370243582661" ignored="false" />
+    <file path="/Dummy.txt" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1370244923826" ignored="false" />
     <file path="/.htaccess" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1369125979859" ignored="false" />
     <file path="/Request.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1366267589878" ignored="false" />
     <file path="/master_view.php" changelist="6d1e16a9-1cf5-4d4b-9595-f5e1f424a660" time="1368187244184" ignored="false" />
@@ -115,7 +113,7 @@
       <file leaf-file-name="tests.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/tests.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="42" selection-start="1820" selection-end="1820" vertical-scroll-proportion="1.3694916">
+            <state line="16" column="12" selection-start="484" selection-end="484" vertical-scroll-proportion="0.65084743">
               <folding>
                 <marker date="1370242315016" expanded="true" signature="1837:1855" placeholder="..." />
                 <marker date="1370242315016" expanded="true" signature="1871:1883" placeholder="..." />
@@ -161,7 +159,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/views/tests_remove_view.php" />
         <option value="$PROJECT_DIR$/classes/database.php" />
         <option value="$PROJECT_DIR$/config.php" />
@@ -177,6 +174,7 @@
         <option value="$PROJECT_DIR$/assets/js/tests_add_edit.js" />
         <option value="$PROJECT_DIR$/controllers/auth.php" />
         <option value="$PROJECT_DIR$/assets/js/tests.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -346,7 +344,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="preferences.fileTypes" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../routerboard" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../halo" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.searchVisible" value="true" />
@@ -354,6 +352,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\testly\doc" />
       <recent name="C:\xampp\htdocs\testly\assets\css" />
       <recent name="C:\xampp\htdocs\testly\assets\img" />
       <recent name="C:\xampp\htdocs\testly\views" />
@@ -451,18 +450,23 @@
       <created>1367245356774</created>
       <updated>1367245356774</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Lot of stuff.">
+      <created>1370243637086</created>
+      <updated>1370243637086</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32792208" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2439394" sideWeight="0.6720779" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2439394" sideWeight="0.6720779" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -472,7 +476,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32686085" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -550,11 +553,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/controllers/auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/img/body_bg.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -578,13 +576,6 @@
     <entry file="file://$PROJECT_DIR$/assets/img/metal2.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config.php">
@@ -641,9 +632,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="7" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/tests.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="42" selection-start="1820" selection-end="1820" vertical-scroll-proportion="1.3694916">
+        <state line="16" column="12" selection-start="484" selection-end="484" vertical-scroll-proportion="0.65084743">
           <folding>
             <marker date="1370242315016" expanded="true" signature="1837:1855" placeholder="..." />
             <marker date="1370242315016" expanded="true" signature="1871:1883" placeholder="..." />

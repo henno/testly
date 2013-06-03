@@ -1,6 +1,6 @@
 <?php
 
-mysql_connect(DATABASE_HOSTNAME, DATABASE_USERNAME) or mysql_error(); // loob ühenduse mysql serveriga
+mysql_connect(DATABASE_HOSTNAME, DATABASE_USERNAME, DATABASE_PASSWORD) or mysql_error(); // loob ühenduse mysql serveriga
 mysql_select_db(DATABASE_DATABASE) or mysql_error(); // ühendus andmebaasiga
 mysql_query("SET NAMES 'utf8'"); // päringud mis saadab on utf8 kodeeringus, et server saaks aru
 mysql_query("SET CHARACTER 'utf8'");

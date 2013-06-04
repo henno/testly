@@ -44,6 +44,7 @@
 			background-color: #F5F5DC;
 
 		}
+
 		table.table-bordered th {
 			text-align: center;
 			background-color: #FACA69;
@@ -69,6 +70,7 @@
 				<ul class="nav" >
 					<li><a  href="#" class="brand" style="pointer-events: none; cursor: default; color: #003881 !important;">Testly</a></li>
 					<li class="active"><a   href="<?=BASE_URL?>tests">Testid</a></li>
+					<li><a style="color: #357EC7"  href="<?=BASE_URL?>groups">Grupid</a></li>
 					<li><a style="color: #357EC7"  href="<?=BASE_URL?>info">Info</a></li>
 					<li><a  style="color: #357EC7" href="<?=BASE_URL?>auth/logout">Logi välja</a></li>
 				</ul>

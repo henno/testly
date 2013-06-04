@@ -35,6 +35,11 @@
 			background: url('<?=BASE_URL?>assets/img/black-texture.jpg');
 			height: 100%;
 		}
+		.container2
+		{
+			margin-left: 90px;
+			margin-top: 50px;
+		}
 		table.table-bordered tr {
 			background-color: #F5F5DC;
 
@@ -71,7 +76,7 @@
 		</div>
 	</div>
 </div>
-<div>
+<div class="container2">
 	<?php
 	require 'views/'.$request->controller.'_'.$request->action.'_view.php';
 	?>

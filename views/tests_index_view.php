@@ -1,5 +1,10 @@
 <style>
 	#tests-table.table-bordered,
+	{
+		width: auto !important;
+
+	}
+	#tests-table.table-bordered,
 	#tests-table.table-bordered tr td#date,
 	#tests-table.table-bordered tr td#edit{
 		width: auto !important;

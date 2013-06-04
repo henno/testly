@@ -37,11 +37,17 @@
 		}
 		table.table-bordered tr {
 			background-color: #F5F5DC;
+
 		}
 		table.table-bordered th {
+			text-align: center;
 			background-color: #FACA69;
 			opacity:0.5;
 			filter:alpha(opacity=50); /* For IE8 and earlier */
+		}
+
+		table.table-bordered td {
+			padding-left: 15px;
 		}
 	</style>
 </head>

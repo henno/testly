@@ -52,8 +52,9 @@
 			<div class="nav-collapse collapse">
 				<ul class="nav">
 					<li><a  href="#" class="brand" style="pointer-events: none; cursor: default;">Testly</a></li>
-					<li class="active"><a href="<?=BASE_URL?>tests">Testid</a></li>
-					<li><a href="<?=BASE_URL?>info">Info</a></li>
+					<li id ="li_tests"><a href="<?=BASE_URL?>tests">Testid</a></li>
+					<li id ="li_students"><a href="<?=BASE_URL?>students">Õpilased</a></li>
+					<li id ="li_info"><a href="<?=BASE_URL?>info">Info</a></li>
 					<li><a href="<?=BASE_URL?>auth/logout">Logi välja</a></li>
 				</ul>
 			</div><!--/.nav-collapse -->
@@ -74,3 +75,28 @@
 
 </body>
 </html>
+<script type="text/javascript">
+	function GetCurrentPageName() {
+		//method to get Current page name from url.
+		var PageURL = document.location.href;
+		var PageName = PageURL.substring(PageURL.lastIndexOf('/') + 1);
+
+		return PageName.toLowerCase() ;
+	}
+
+	$(document).ready(function(){
+		var CurrPage = GetCurrentPageName();
+
+		switch(CurrPage){
+			case 'tests':
+				$('#li_tests').addClass('active') ;
+				break;
+			case 'students':
+				$('#li_students').addClass('active') ;
+				break;
+			case 'info':
+				$('#li_info').addClass('active') ;
+				break;
+		}
+	});
+</script>

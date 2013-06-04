@@ -68,9 +68,11 @@
 			<div class="nav-collapse collapse">
 				<ul class="nav" >
 					<li><a  href="#" class="brand" style="pointer-events: none; cursor: default; color: #003881 !important;">Testly</a></li>
-					<li class="active"><a   href="<?=BASE_URL?>tests">Testid</a></li>
-					<li><a style="color: #357EC7"  href="<?=BASE_URL?>info">Info</a></li>
-					<li><a  style="color: #357EC7" href="<?=BASE_URL?>auth/logout">Logi välja</a></li>
+					<li id="li_tests"><a   href="<?=BASE_URL?>tests">Testid</a></li>
+					<li id="li_groups"><a   href="<?=BASE_URL?>groups">Grupid</a></li>
+					<li id="li_students"><a   href="<?=BASE_URL?>students">Õpilased</a></li>
+					<li id="li_info"><a  href="<?=BASE_URL?>info">Info</a></li>
+					<li><a href="<?=BASE_URL?>auth/logout">Logi välja</a></li>
 				</ul>
 			</div><!--/.nav-collapse -->
 		</div>
@@ -103,6 +105,9 @@
 		switch(CurrPage){
 			case 'tests':
 				$('#li_tests').addClass('active') ;
+				break;
+			case 'groups':
+				$('#li_groups').addClass('active') ;
 				break;
 			case 'students':
 				$('#li_students').addClass('active') ;

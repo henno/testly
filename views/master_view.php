@@ -32,16 +32,32 @@
 			padding-top: 60px;
 		}
 		body, html {
-			background: url('<?=BASE_URL?>assets/img/iostexture.png');
+			background: url('<?=BASE_URL?>assets/img/black-texture.jpg');
 			height: 100%;
 		}
+		.container2
+		{
+			margin-left: 90px;
+			margin-top: 50px;
+		}
 		table.table-bordered tr {
-			background-color: #f9f9f9;
+			background-color: #F5F5DC;
+
+		}
+		table.table-bordered th {
+			text-align: center;
+			background-color: #FACA69;
+			opacity:0.5;
+			filter:alpha(opacity=50); /* For IE8 and earlier */
+		}
+
+		table.table-bordered td {
+			padding-left: 15px;
 		}
 	</style>
 </head>
 <body>
-<div class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar navbar-inverse navbar-fixed-top" >
 	<div class="navbar-inner">
 		<div class="container">
 			<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -50,17 +66,24 @@
 				<span class="icon-bar"></span>
 			</button>
 			<div class="nav-collapse collapse">
-				<ul class="nav">
-					<li><a  href="#" class="brand" style="pointer-events: none; cursor: default;">Testly</a></li>
-					<li class="active"><a href="<?=BASE_URL?>tests">Testid</a></li>
-					<li><a href="<?=BASE_URL?>info">Info</a></li>
-					<li><a href="<?=BASE_URL?>auth/logout">Logi välja</a></li>
+				<ul class="nav" >
+
+					<li><a  href="#" class="brand" style="pointer-events: none; cursor: default; color: #003881 !important;">Testly</a></li>
+					<li id="li_tests"><a   href="<?=BASE_URL?>tests">Testid</a></li>
+					<li id="li_groups"><a   href="<?=BASE_URL?>groups">Grupid</a></li>
+					<li id="li_students"><a   href="<?=BASE_URL?>students">Õpilased</a></li>
 				</ul>
 			</div><!--/.nav-collapse -->
+			<div class="pull-right">
+				<ul class="nav" >
+					<li id="li_info"><a href="<?=BASE_URL?>info">Info</a></li>
+					<li><a href="<?=BASE_URL?>auth/logout">Logi välja</a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </div>
-<div>
+<div class="container2">
 	<?php
 	require 'views/'.$request->controller.'_'.$request->action.'_view.php';
 	?>
@@ -69,8 +92,34 @@
 <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 <![endif]-->
 
-<!-- Add your site or application content here -->
-
-
 </body>
 </html>
+
+<script type="text/javascript">
+	function GetCurrentPageName() {
+		//method to get Current page name from url.
+		var PageURL = document.location.href;
+		var PageName = PageURL.substring(PageURL.lastIndexOf('/') + 1);
+
+		return PageName.toLowerCase() ;
+	}
+
+	$(document).ready(function(){
+		var CurrPage = GetCurrentPageName();
+
+		switch(CurrPage){
+			case 'tests':
+				$('#li_tests').addClass('active') ;
+				break;
+			case 'groups':
+				$('#li_groups').addClass('active') ;
+				break;
+			case 'students':
+				$('#li_students').addClass('active') ;
+				break;
+			case 'info':
+				$('#li_info').addClass('active') ;
+				break;
+		}
+	});
+</script>

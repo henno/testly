@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jun 03, 2013 at 07:33 AM
+-- Generation Time: Jun 04, 2013 at 10:41 AM
 -- Server version: 5.5.24-log
 -- PHP Version: 5.4.3
 
@@ -34,6 +34,22 @@ CREATE TABLE IF NOT EXISTS `answer` (
   `deleted` tinyint(3) unsigned NOT NULL DEFAULT '0',
   KEY `question_id` (`question_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `group`
+--
+
+DROP TABLE IF EXISTS `group`;
+CREATE TABLE IF NOT EXISTS `group` (
+  `group_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `group_name` varchar(255) NOT NULL,
+  `student_id` int(10) unsigned NOT NULL,
+  `deleted` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`group_id`),
+  KEY `student_id` (`student_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -83,6 +99,21 @@ INSERT INTO `question_type` (`question_type_id`, `question_type`, `deleted`) VAL
 (2, 'üks õige', 0),
 (3, 'mitu õiget', 0),
 (4, 'täida lünk', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `student`
+--
+
+DROP TABLE IF EXISTS `student`;
+CREATE TABLE IF NOT EXISTS `student` (
+  `student_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `student_name` varchar(255) NOT NULL,
+  `e-mail` varchar(255) NOT NULL,
+  `deleted` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`student_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -153,6 +184,12 @@ INSERT INTO `user` (`user_id`, `username`, `password`, `status`, `deleted`) VALU
 --
 ALTER TABLE `answer`
   ADD CONSTRAINT `answer_ibfk_2` FOREIGN KEY (`question_id`) REFERENCES `question` (`question_id`);
+
+--
+-- Constraints for table `group`
+--
+ALTER TABLE `group`
+  ADD CONSTRAINT `group_ibfk_1` FOREIGN KEY (`student_id`) REFERENCES `student` (`student_id`);
 
 --
 -- Constraints for table `question`

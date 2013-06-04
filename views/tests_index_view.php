@@ -1,3 +1,23 @@
+<style>
+	#tests-table.table-bordered,
+	{
+		width: auto !important;
+
+	}
+	#tests-table.table-bordered,
+	#tests-table.table-bordered tr td#date,
+	#tests-table.table-bordered tr td#edit{
+		width: auto !important;
+	}
+	#tests-table.table-bordered tr td#name  {
+		width: 250px !important;
+	}
+	#tests-table.table-bordered tr td#username  {
+		width: 200px  !important;
+	}
+
+
+</style>
 <p>
 	<a class="btn btn-large btn-primary" href="#" id="add_test">Lisa uus test</a>
 </p>
@@ -13,10 +33,10 @@
 	<tbody>
 	<?if ( !empty ($tests)): foreach($tests as $test):?>
 	<tr id="test<?=$test['test_id']?>">
-		<td><?=$test['name']?></td>
-		<td><?=$test['username']?></td>
-		<td><?=substr($test['date'],0,10)?></td>
-		<td>
+		<td id="name"><?=$test['name']?></td>
+		<td id="username"><?=$test['username']?></td>
+		<td id="date""><?=substr($test['date'],0,10)?></td>
+		<td id="edit">
 			<a href="<?=BASE_URL?>tests/edit/<?=$test['test_id']?>">
 				<i class="icon-pencil"></i></a>
 

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jun 03, 2013 at 07:33 AM
+-- Generation Time: Jun 05, 2013 at 07:45 AM
 -- Server version: 5.5.24-log
 -- PHP Version: 5.4.3
 
@@ -34,6 +34,30 @@ CREATE TABLE IF NOT EXISTS `answer` (
   `deleted` tinyint(3) unsigned NOT NULL DEFAULT '0',
   KEY `question_id` (`question_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `group`
+--
+
+DROP TABLE IF EXISTS `group`;
+CREATE TABLE IF NOT EXISTS `group` (
+  `group_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `group_name` varchar(255) NOT NULL,
+  `deleted` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`group_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+
+--
+-- Dumping data for table `group`
+--
+
+INSERT INTO `group` (`group_id`, `group_name`, `deleted`) VALUES
+(1, 'AK-47', 0),
+(2, 'AR-15', 0),
+(3, 'USA-12', 0),
+(4, 'miskit', 0);
 
 -- --------------------------------------------------------
 
@@ -83,6 +107,33 @@ INSERT INTO `question_type` (`question_type_id`, `question_type`, `deleted`) VAL
 (2, 'üks õige', 0),
 (3, 'mitu õiget', 0),
 (4, 'täida lünk', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `student`
+--
+
+DROP TABLE IF EXISTS `student`;
+CREATE TABLE IF NOT EXISTS `student` (
+  `student_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `student_name` varchar(255) NOT NULL,
+  `group_id` int(10) unsigned NOT NULL,
+  `e-mail` varchar(255) NOT NULL,
+  `deleted` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`student_id`),
+  KEY `group_id` (`group_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
+
+--
+-- Dumping data for table `student`
+--
+
+INSERT INTO `student` (`student_id`, `student_name`, `group_id`, `e-mail`, `deleted`) VALUES
+(3, 'aia', 1, 'aia@khk.ee', 0),
+(4, 'saia', 2, 'saia@khk.ee', 0),
+(5, 'Milky Way', 3, 'milki@hot.ee', 0),
+(6, 'nupsik', 3, 'nups@gmail.com', 0);
 
 -- --------------------------------------------------------
 
@@ -160,6 +211,12 @@ ALTER TABLE `answer`
 ALTER TABLE `question`
   ADD CONSTRAINT `question_ibfk_1` FOREIGN KEY (`test_id`) REFERENCES `test` (`test_id`),
   ADD CONSTRAINT `question_ibfk_2` FOREIGN KEY (`question_type_id`) REFERENCES `question_type` (`question_type_id`);
+
+--
+-- Constraints for table `student`
+--
+ALTER TABLE `student`
+  ADD CONSTRAINT `student_ibfk_1` FOREIGN KEY (`group_id`) REFERENCES `group` (`group_id`);
 
 --
 -- Constraints for table `test`

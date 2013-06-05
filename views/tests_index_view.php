@@ -40,7 +40,7 @@
 
 			<a href="#" onclick="if(!confirm('Oled kindel?')) return false;
 				remove_test_ajax(<?=$test['test_id']?>); return false">
-				<center><i class="icon-trash"></i></center>
+				<i class="icon-trash"></i>
 		</td>
 	</tr>
 	<? endforeach; endif ?>

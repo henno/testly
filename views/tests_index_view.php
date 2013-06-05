@@ -27,7 +27,7 @@
 		<th>Testi nimi</th>
 		<th>Koostaja</th>
 		<th>Aeg</th>
-		<th>Tegevused</th>
+		<th>Kustuta</th>
 	</tr>
 	</thead>
 	<tbody>
@@ -36,13 +36,11 @@
 		<td id="name"><a href="/testly/tests/edit/<?= $test['test_id'] ?>"/><?=$test['name']?></td>
 		<td id="username"><?=$test['username']?></td>
 		<td id="date""><?=substr($test['date'],0,10)?></td>
-		<td id="edit">
-			<a href="<?=BASE_URL?>tests/edit/<?=$test['test_id']?>">
-				<i class="icon-pencil"></i></a>
+		<td id="delete">
 
 			<a href="#" onclick="if(!confirm('Oled kindel?')) return false;
 				remove_test_ajax(<?=$test['test_id']?>); return false">
-				<i class="icon-trash"></i>Kustuta</a>
+				<center><i class="icon-trash"></i></center>
 		</td>
 	</tr>
 	<? endforeach; endif ?>

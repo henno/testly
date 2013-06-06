@@ -1,3 +1,9 @@
+<style>
+	#groups-table.table-bordered
+	{
+		width: auto !important;
+	}
+</style>
 <div id="left" style="float: left; width: 400px;display: inline-block">
 	<button class=" btn btn-primary" type="button">Kustuta valitud</button>
 </div>
@@ -19,7 +25,7 @@
 		<tr>
 			<td><input type="checkbox" style="margin-top: -2px"></td>
 			<td style="padding-left: 20px;padding-right: 50px"> <?=$student["student_name"]?> </td>
-			<td style="padding-left: 20px;padding-right: 50px"> <?if(!empty($number)): echo $number[0]["number"];endif;?></td>
+			<td style="padding-left: 20px;padding-right: 50px"> <?=$student["e-mail"]?></td>
 		</tr>
 	<?endforeach;endif?>
 	</tbody>

@@ -10,17 +10,22 @@
 class groups {
 	function index(){
 		global $request;
-		$groups=get_all("SELECT * FROM `group` GROUP BY group_id");
-	//	var_dump($groups);
+		$this->scripts[] = 'groups_index_add.js';
 
+		$groups=get_all("SELECT * FROM `group` GROUP BY group_id");
+
+		if(isset($_POST["group"])):$group_name=$_POST["group"];
+		$group_id=get_one("INSERT INTO `group` SET group_name='$group_name'");
+		endif;
 		if(!empty($groups)):foreach($groups as $group):
-		$number=get_all("SELECT COUNT(student_id) as 'number' FROM student WHERE student.group_id='$group[group_id]'");
-			var_dump($number);
-	       // die( var_dump($number));
+		$numbers=get_all("SELECT COUNT(student_id) as 'number' FROM student WHERE student.group_id='$group[group_id]'");
+			$numbers=$numbers[0];
+			foreach($numbers as $number){
+				$group["number"]=[$number];
+			}
 
 	        endforeach;endif;
 		require 'views/master_view.php';
-//vastavalt group idle tuleb teha opilaste p2ring!!!!1
 	}
 	function selected(){
 		global $request;
@@ -30,4 +35,5 @@ class groups {
 		require 'views/master_view.php';
 
 	}
+
 }

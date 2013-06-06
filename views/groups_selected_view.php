@@ -1,17 +1,22 @@
 <style>
-	#groups-table.table-bordered
+	#selected_group_table.table-bordered
 	{
 		width: auto !important;
+		float: left;
 	}
 </style>
-<div id="left" style="float: left; width: 400px;display: inline-block">
-	<button class=" btn btn-primary" type="button">Kustuta valitud</button>
-</div>
 
-<div id="right" style="float: right; width: 400px;display: inline-block">
-	<form method="POST" style="margin: 0;padding: 0"><input type="text" style="float: left"><input type="text" style="float: left"></form>
-	<button class="btn  btn-primary" type="submit" style="float: left;">Lisa grupp</button>
+<div id="right" style="float: right; width: 400px;">
+	<form class="form-inline" method="POST"  >
+		<input id="name" class="input-small" placeholder="Lisa nimi" type="text" ">
+		<input id="e-mail" class="input-small" placeholder="Lisa e-mail" type="text"">
+		<button class="btn  btn-primary" type="submit" >Lisa õpilane</button>
+	</form>
 </div>
+<div id="left" style="float: left; width: 400px;display: inline-block">
+
+<button class=" btn btn-primary" type="button">Kustuta valitud</button>
+
 <table id="selected_group_table" class="table table-bordered table-striped" style="margin-top: 50px">
 	<thead>
 	<tr>
@@ -30,3 +35,4 @@
 	<?endforeach;endif?>
 	</tbody>
 </table>
+	</div>

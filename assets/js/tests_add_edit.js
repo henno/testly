@@ -13,12 +13,12 @@ function addMultipleChoice() {
 	return false;
 }
 var i = 0;
-var id = 'tekstikast_0';
+var box_id = 'kast_0';
 function addMultipleResponse() {
-	if ($('#' + id).val().length > 0) {
+	if ($('#' + box_id).val().length > 0) {
 		i = i+1;
-		id = 'tekstikast_'+i;
-		$('#answer_options').append('<div><input type="checkbox" style="margin: 5px; margin-bottom: 10px"><textarea oninput="addMultipleResponse()" id="tekstikast_'+i+'"></textarea></div>');
+		box_id = 'kast_'+i;
+		$('#answer_options').append('<div><input type="checkbox" style="margin: 5px; margin-bottom: 10px"><textarea oninput="addMultipleResponse()" id="kast_'+i+'"></textarea></div>');
 	}
 	return false;
 }
@@ -98,6 +98,8 @@ $(function () {
 				// mitmikvalik
 				$('#answer_options div').remove();
 				$('#answer_options p').remove();
+				j = 0;
+				jd = 'tekstikast_0';
 				$('#answer_options').append('<p>Märgi ära õige vastus:</p>');
 				$('#answer_options').append('<div><input class="input" type="radio" style="margin: 5px; margin-bottom: 10px" name="multiple_choice"><textarea oninput="addMultipleChoice()" id="tekstikast_0"></textarea></div>');
 				break;
@@ -105,8 +107,10 @@ $(function () {
 				// mitmikvastus
 				$('#answer_options div').remove();
 				$('#answer_options p').remove();
+				i = 0;
+				box_id = 'kast_0';
 				$('#answer_options').append('<p>Märgi ära õiged vastused:</p>');
-				$('#answer_options').append('<div><input class="input" type="checkbox" style="margin: 5px; margin-bottom: 10px"><textarea oninput="addMultipleResponse()" id="tekstikast_0"></textarea></div>');
+				$('#answer_options').append('<div><input class="input" type="checkbox" style="margin: 5px; margin-bottom: 10px"><textarea oninput="addMultipleResponse()" id="kast_0"></textarea></div>');
 
 				break;
 			case '4':

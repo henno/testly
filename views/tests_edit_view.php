@@ -82,3 +82,6 @@
 		</table>
 	</div>
 </div>
+<script>
+	var id = '<?=$request->params[0]?>';
+</script>

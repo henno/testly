@@ -45,22 +45,28 @@ function checkForm() {
 function save_test_changes() {
 	$('#test_edit_form').submit();
 }
+var question_no;
+var new_question_no = isNaN(parseInt(question_no, 10));
 function add_question() {
+	var selected_type = $('#question_type_id').val();
+	var question_type_id = $('#question_type_id option[value="'+selected_type+'"]').text();
+	var question_text = $('#question_text').val();
 	$.ajax({
 		type    : 'POST',
 		dataType: 'html',
-		data    : {
-			question: {
-				question_text   : $('#question_text').val(),
-				question_type_id: $('#question_type_id').val()
-
-			}
-		},
-		url     : BASE_URL + 'tests/add',
+		data    : {questiontext: question_text},
+		url     : BASE_URL + 'tests/add_question',
 		complete: function (data) {
 			console.log(data);
-			if (!isNaN(data.responseText) && data.responseText > 0) {
-				window.location = BASE_URL + 'tests/edit/' + data.responseText
+			if (data) {
+				$('#questions_table').each(function() {
+					question_no = ($(this).find("tr:last").find('td:first').html()).slice(0,-1);
+					new_question_no = new_question_no + 1;
+				});
+				$("#questions_table").append('<tr><td>'+new_question_no+'.</td>'+
+					'<td>'+question_text+'</td>'+
+					'<td>'+question_type_id+'</td>'+
+					'<td><i class="icon-pencil"></i><i class="icon-trash"></i></td></tr>');
 			}
 			else {
 				alert("Viga testi lisamisel baasi!" + ' ' + data.responseText)
@@ -76,6 +82,7 @@ $(function () {
 			case '1':
 				// õige/vale
 				$('#answer_options div').remove();
+				$('#answer_options p').remove();
 				$('#answer_options').append('<p>Märgi ära õige vastus:</p>');
 				$('#answer_options').append('<div style="padding: 5px"><input style="margin: 5px; margin-bottom: 9px" type="radio" id="answer_option[0]" name="tfselected">Jah</div>');
 				$('#answer_options').append('<div style="padding: 5px"><input style="margin: 5px; margin-bottom: 9px" type="radio" id="answer_option[1]" name="tfselected">Ei</div>');
@@ -87,6 +94,7 @@ $(function () {
 			case '3':
 				// mitmikvastus
 				$('#answer_options div').remove();
+				$('#answer_options p').remove();
 				$('#answer_options').append('<p>Märgi ära õiged vastused:</p>');
 				$('#answer_options').append('<div><input class="input" type="checkbox" style="margin: 5px; margin-bottom: 10px"><textarea oninput="addMultipleResponse()" id="tekstikast_0"></textarea></div>');
 
@@ -100,7 +108,7 @@ $(function () {
 		}
 
 		current_type_id = $(this).val();
-	})
+	});
 
 	$('#answer-template .answer-template').hide();
 	$('#question_type_' + current_type_id).show();

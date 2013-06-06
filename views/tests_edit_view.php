@@ -26,7 +26,7 @@
 		</form>
 	</div>
 	<div id="tabs-2">
-		<table class="table table-bordered table-striped">
+		<table id="questions_table" class="table table-bordered table-striped">
 			<tr>
 				<th>#</th>
 				<th style="min-width: 300px">Küsimus</th>
@@ -34,7 +34,8 @@
 				<th style="max-width: 40px">&nbsp;</th>
 			</tr>
 			<? $n = 1; if(!empty($questions)) foreach($questions as $question):?>
-			<tr>
+				<?$id = $question['question_id']?>
+			<tr id="<?=$id?>">
 				<td><?=$n++?>.</td>
 				<td><?=$question['question_text']?></td>
 				<td><?=$question['question_type']?></td>
@@ -46,16 +47,17 @@
 		<textarea id="question_text"></textarea>
 		<label>Tüüp</label>
 		<select id="question_type_id">
-			<option value="1">True/false</option>
-			<option value="2" selected="selected">Mitmikvalik</option>
-			<option value="3">Multiple response</option>
-			<option value="4">Fill in the blank</option>
+			<option value="1" selected="selected">Tõene/Väär</option>
+			<option value="2">Mitmikvalik</option>
+			<option value="3">Mitmikvastus</option>
+			<option value="4">Täida lüngad</option>
 		</select>
-			<div id="answer_options">
-			</div>
+			<div id="answer_options"></div>
 		<div style="clear: both; padding-bottom: 7px;">
-			<button class="btn btn btn-primary" type="button" onclick="add_question()">Salvesta</button>
+			<button name="vorminupp" class="btn btn btn-primary" type="button" onclick="add_question()
+			">Salvesta</button>
 		</div>
+		<div id="suvaline"></div>
 	</div>
 	<div id="tabs-3">
 		<table id="participants-table" class="table table-bordered table-striped" style="width: auto">

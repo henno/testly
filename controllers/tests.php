@@ -40,4 +40,25 @@ class tests {
 			exit('Testi nimi puudub!');
 		}
 	}
+	function add_question(){
+		ob_end_clean();
+		global $request;
+		$this->scripts[] = 'tests_add_edit.js';
+		//$id = $request->params[0];
+		$question_text = $_POST['questiontext'];
+		var_dump($_POST);
+		var_dump($question_text);
+		die();
+		if(($_POST['question_text'])>0){
+			$question_type_id = $_POST['question']['question_type_id'];
+			echo $question_type_id;
+			die();
+			$question = q("INSERT INTO question SET test_id='$id', question_text='$question_text', question_type_id='$question_type_id'");
+			//echo $test_id>0 ? $test_id : 'FAIL';
+			exit();
+		}
+		else{
+			exit('Küsimuse nimi puudub!');
+		}
+	}
 }

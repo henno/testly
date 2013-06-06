@@ -2,11 +2,14 @@ var current_type_id = 1;
 var ylakoma = "'";
 var jutum2rk = '"';
 
+var j = 0;
+var jd = 'tekstikast_0';
 function addMultipleChoice() {
-	var html = '<div class="answer-option"><input type="radio" name="mc.correct" value="<id>">&nbsp;<textarea name="mc.answer.<id>"></textarea></div>';
-	var textareas_count = $('#multiple-choice-options textarea').length;
-	html = html.replace(/<id>/g, textareas_count + 1);
-	$('#multiple-choice-options').append(html);
+	if ($('#' + jd).val().length > 0) {
+		j = j+1;
+		jd = 'tekstikast_'+j;
+		$('#answer_options').append('<div><input type="radio" style="margin: 5px; margin-bottom: 10px" name="multiple_choice"><textarea oninput="addMultipleChoice()" id="tekstikast_'+j+'"></textarea></div>');
+	}
 	return false;
 }
 var i = 0;
@@ -63,10 +66,14 @@ function add_question() {
 					question_no = ($(this).find("tr:last").find('td:first').html()).slice(0,-1);
 					new_question_no = new_question_no + 1;
 				});
-				$("#questions_table").append('<tr><td>'+new_question_no+'.</td>'+
-					'<td>'+question_text+'</td>'+
-					'<td>'+question_type_id+'</td>'+
-					'<td><i class="icon-pencil"></i><i class="icon-trash"></i></td></tr>');
+				if (question_text.length > 0) {
+					$("#questions_table").append('<tr><td>'+new_question_no+'.</td>'+
+						'<td>'+question_text+'</td>'+
+						'<td>'+question_type_id+'</td>'+
+						'<td><i class="icon-pencil"></i><i class="icon-trash"></i></td></tr>');
+				} else {
+					alert("Küsimuse nimi puudub!");
+				}
 			}
 			else {
 				alert("Viga testi lisamisel baasi!" + ' ' + data.responseText)
@@ -92,7 +99,7 @@ $(function () {
 				$('#answer_options div').remove();
 				$('#answer_options p').remove();
 				$('#answer_options').append('<p>Märgi ära õige vastus:</p>');
-				$('#answer_options').append('<div><input class="input" type="checkbox" style="margin: 5px; margin-bottom: 10px"><textarea oninput="addMultipleResponse()" id="tekstikast_0"></textarea></div>');
+				$('#answer_options').append('<div><input class="input" type="radio" style="margin: 5px; margin-bottom: 10px" name="multiple_choice"><textarea oninput="addMultipleChoice()" id="tekstikast_0"></textarea></div>');
 				break;
 			case '3':
 				// mitmikvastus

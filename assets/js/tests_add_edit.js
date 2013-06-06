@@ -57,11 +57,11 @@ function add_question() {
 	$.ajax({
 		type    : 'POST',
 		dataType: 'html',
-		data    : {questiontext: question_text},
-		url     : BASE_URL + 'tests/add_question',
+		data    : {questiontext: question_text, question_type_id: $('#question_type_id').val()},
+		url     : BASE_URL + 'tests/add_question/'+id,
 		complete: function (data) {
 			console.log(data);
-			if (data) {
+			if (data.responseText>0) {
 				$('#questions_table').each(function() {
 					question_no = ($(this).find("tr:last").find('td:first').html()).slice(0,-1);
 					new_question_no = new_question_no + 1;
@@ -76,7 +76,7 @@ function add_question() {
 				}
 			}
 			else {
-				alert("Viga testi lisamisel baasi!" + ' ' + data.responseText)
+				alert("Viga küsimuse lisamisel baasi!" + ' ' + data.responseText.replace(/<(?:.|\n)*?>/gm, ''));
 			}
 		}
 	})

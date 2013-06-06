@@ -90,6 +90,9 @@ $(function () {
 			case '2':
 				// mitmikvalik
 				$('#answer_options div').remove();
+				$('#answer_options p').remove();
+				$('#answer_options').append('<p>Märgi ära õige vastus:</p>');
+				$('#answer_options').append('<div><input class="input" type="checkbox" style="margin: 5px; margin-bottom: 10px"><textarea oninput="addMultipleResponse()" id="tekstikast_0"></textarea></div>');
 				break;
 			case '3':
 				// mitmikvastus

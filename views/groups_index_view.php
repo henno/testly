@@ -18,12 +18,13 @@
 		</tr>
 		</thead>
 		<tbody>
+		<?if(!empty($groups)):foreach( $groups as $group):?>
 		<tr>
-
 				<td><input type="checkbox" style="margin-top: -2px"></td>
-			<td style="padding-left: 20px;padding-right: 50px"> MYgroup</td>
-			<td style="padding-left: 20px;padding-right: 50px"> 1000</td>
+				<td style="padding-left: 20px;padding-right: 50px"> <a href="<?BASE_URL?>groups/selected/<?$group["group_id"]?>"><?=$group["group_name"]?></a> </td>
+			<td style="padding-left: 20px;padding-right: 50px"> <?if(!empty($number)): echo $number[0]["number"];endif;?></td>
 		</tr>
+		<?endforeach;endif?>
 		</tbody>
 	</table>
 

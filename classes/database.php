@@ -1,7 +1,7 @@
 <?php
 
-mysql_connect(DATABASE_HOSTNAME, DATABASE_USERNAME, DATABASE_PASSWORD) or mysql_error(); // loob ühenduse mysql serveriga
-mysql_select_db(DATABASE_DATABASE) or mysql_error(); // ühendus andmebaasiga
+mysql_connect(DATABASE_HOSTNAME, DATABASE_USERNAME, DATABASE_PASSWORD) or db_error_out(); // loob ühenduse mysql serveriga
+mysql_select_db(DATABASE_DATABASE) or db_error_out(); // ühendus andmebaasiga
 mysql_query("SET NAMES 'utf8'"); // päringud mis saadab on utf8 kodeeringus, et server saaks aru
 mysql_query("SET CHARACTER 'utf8'");
 
@@ -12,11 +12,14 @@ function q($sql, & $query_pointer = NULL, $debug = false){
 	$query_pointer = mysql_query($sql) or db_error_out();
 	switch (substr($sql, 0, 4)){
 		case 'SELE':
-			return mysql_num_rows($query_pointer);
+			exit("q($sql): Please don't use q() for SELECTs, use get_one() or get_first() or get_all() instead.");
 		case 'INSE':
-			return mysql_insert_id();
+			exit("q($sql): Please don't use q() for SELECTs, use get_one() or get_first() or get_all() instead.");
+		case 'UPDA':
+			exit("q($sql): Please don't use q() for UPDATEs, use update() instead.");
 		default:
-			return mysql_affected_rows();
+			$query_pointer = mysql_query($sql) or db_error_out();
+			return mysql_num_rows($query_pointer);
 	}
 }
 
@@ -34,7 +37,7 @@ function get_one($sql, & $query_pointer = NULL, $debug = false){
 }
 
 function get_all($sql){
-	$q = mysql_query($sql) or exit(mysql_error());
+	$q = mysql_query($sql) or db_error_out();
 	while (($result[] = mysql_fetch_assoc($q)) || array_pop($result)){
 		;
 	}

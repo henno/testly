@@ -1,7 +1,7 @@
 <?php
 
-mysql_connect(DATABASE_HOSTNAME, DATABASE_USERNAME, DATABASE_PASSWORD) or mysql_error(); // loob ühenduse mysql serveriga
-mysql_select_db(DATABASE_DATABASE) or mysql_error(); // ühendus andmebaasiga
+mysql_connect(DATABASE_HOSTNAME, DATABASE_USERNAME, DATABASE_PASSWORD) or db_error_out(); // loob ühenduse mysql serveriga
+mysql_select_db(DATABASE_DATABASE) or db_error_out(); // ühendus andmebaasiga
 mysql_query("SET NAMES 'utf8'"); // päringud mis saadab on utf8 kodeeringus, et server saaks aru
 mysql_query("SET CHARACTER 'utf8'");
 
@@ -34,7 +34,7 @@ function get_one($sql, & $query_pointer = NULL, $debug = false){
 }
 
 function get_all($sql){
-	$q = mysql_query($sql) or exit(mysql_error());
+	$q = mysql_query($sql) or db_error_out();
 	while (($result[] = mysql_fetch_assoc($q)) || array_pop($result)){
 		;
 	}

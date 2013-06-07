@@ -5,7 +5,7 @@ mysql_select_db(DATABASE_DATABASE) or db_error_out(); // ühendus andmebaasiga
 mysql_query("SET NAMES 'utf8'"); // päringud mis saadab on utf8 kodeeringus, et server saaks aru
 mysql_query("SET CHARACTER 'utf8'");
 
-function q($sql, & $query_pointer = NULL, $debug = false){
+function q($sql, & $query_pointer = NULL, $debug = FALSE){
 	if ($debug){
 		print "<pre>$sql</pre>";
 	}
@@ -23,7 +23,7 @@ function q($sql, & $query_pointer = NULL, $debug = false){
 	}
 }
 
-function get_one($sql, & $query_pointer = NULL, $debug = false){
+function get_one($sql, & $query_pointer = NULL, $debug = FALSE){
 	if ($debug){ // kui debug on TRUE
 		print "<pre>$sql</pre>";
 	}
@@ -91,6 +91,12 @@ function db_error_out($sql = NULL)
 	die();
 
 }
+insert()
+/**
+ * @param $table string The name of the table to be inserted into.
+ * @param $data array Array of data. For example: array('field1' => 'mystring', 'field2' => 3);
+ * @return bool|int Returns the ID of the inserted row or FALSE when fails.
+ */
 function insert($table, $data)
 {
 	if ($table and is_array($data) and ! empty($data)) {

@@ -26,7 +26,7 @@ function get_one($sql, & $query_pointer = NULL, $debug = false){
 	}
 	switch (substr($sql, 0, 4)){
 		case 'SELE':
-			$q = mysql_query($sql) or db_error_out());
+			$q = mysql_query($sql) or db_error_out();
 			return mysql_result($q,0);
 		default:
 			exit('get_one("'.$sql.'") failed because get_one expects SELECT statement.');

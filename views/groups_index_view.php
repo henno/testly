@@ -1,4 +1,3 @@
-
 <style>
 	#groups-table.table-bordered
 	{
@@ -20,9 +19,6 @@
 		</thead>
 		<tbody>
 
-		<tr id="new_groups">
-
-		</tr>
 		<?if(isset($groups)):foreach( $groups as $group):?>
 
 		<tr id="my_groups">

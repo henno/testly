@@ -19,27 +19,20 @@ function q($sql, & $query_pointer = NULL, $debug = false){
 			return mysql_affected_rows();
 	}
 }
+
 function get_one($sql, & $query_pointer = NULL, $debug = false){
 	if ($debug){ // kui debug on TRUE
 		print "<pre>$sql</pre>";
 	}
-	$query_pointer = mysql_query($sql) or mysql_error();
 	switch (substr($sql, 0, 4)){
 		case 'SELE':
-			return mysql_num_rows($query_pointer);
-		case 'INSE':
-			return mysql_insert_id();
+			$q = mysql_query($sql) or db_error_out());
+			return mysql_result($q,0);
 		default:
-			return mysql_affected_rows();
+			exit('get_one("'.$sql.'") failed because get_one expects SELECT statement.');
 	}
-	$q = mysql_query($sql) or exit(mysql_error());
-	if (mysql_num_rows($q) === false){
-		exit($sql);
-	}
-	$result = mysql_fetch_row($q); // teeb massiivi $q-st
-	// kas $result on array ja on rohkem kui 0 elementi, siis tagastab esimese elemendi
-	return is_array($result) && count($result) > 0 ? $result[0] : null;
 }
+
 function get_all($sql){
 	$q = mysql_query($sql) or exit(mysql_error());
 	while (($result[] = mysql_fetch_assoc($q)) || array_pop($result)){
@@ -47,6 +40,7 @@ function get_all($sql){
 	}
 	return $result;
 }
+
 function db_error_out($sql = NULL)
 {
 	$db_error = mysql_error();

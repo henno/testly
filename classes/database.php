@@ -12,11 +12,14 @@ function q($sql, & $query_pointer = NULL, $debug = false){
 	$query_pointer = mysql_query($sql) or db_error_out();
 	switch (substr($sql, 0, 4)){
 		case 'SELE':
-			return mysql_num_rows($query_pointer);
+			exit("q($sql): Please don't use q() for SELECTs, use get_one() or get_first() or get_all() instead.");
 		case 'INSE':
-			return mysql_insert_id();
+			exit("q($sql): Please don't use q() for SELECTs, use get_one() or get_first() or get_all() instead.");
+		case 'UPDA':
+			exit("q($sql): Please don't use q() for UPDATEs, use update() instead.");
 		default:
-			return mysql_affected_rows();
+			$query_pointer = mysql_query($sql) or db_error_out();
+			return mysql_num_rows($query_pointer);
 	}
 }
 

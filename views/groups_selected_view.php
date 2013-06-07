@@ -9,9 +9,10 @@
 <div id="right" style="float: right; width: 400px;">
 	<form class="form-inline" method="POST"  >
 		<input id="name" class="input-small" placeholder="Lisa nimi" type="text" ">
-		<input id="e-mail" class="input-small" placeholder="Lisa e-mail" type="text"">
-		<button class="btn  btn-primary" type="submit" >Lisa õpilane</button>
+		<input id="email" class="input-small" placeholder="Lisa e-mail" type="text"">
 	</form>
+	<button class="btn  btn-primary" onclick="add_student()" >Lisa õpilane</button>
+
 </div>
 <div id="left" style="float: left; width: 400px;display: inline-block">
 
@@ -30,7 +31,7 @@
 		<tr>
 			<td><input type="checkbox" style="margin-top: -2px"></td>
 			<td style="padding-left: 20px;padding-right: 50px"> <?=$student["student_name"]?> </td>
-			<td style="padding-left: 20px;padding-right: 50px"> <?=$student["e-mail"]?></td>
+			<td style="padding-left: 20px;padding-right: 50px"> <?=$student["email"]?></td>
 		</tr>
 	<?endforeach;endif?>
 	</tbody>

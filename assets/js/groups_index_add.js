@@ -11,7 +11,7 @@ function add_group() {
 		success: function (data) {
 
 			var input=$("#add").val()
-			var group_id = '<?=$group_id?>';
+			var group_id = "<?=$group_id?>";
 			//$('tbody').append.innerHTML ="<td>"+input+"</td>";
 			$("tbody").append('<tr><td><input type="checkbox"></td><td><a href="'+BASE_URL+'groups/selected/'+group_id+'">'+input+'</a></td>'+'<td>0</td></tr>');
 			$("#add").val('')

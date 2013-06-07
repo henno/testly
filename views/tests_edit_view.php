@@ -34,12 +34,13 @@
 				<th style="max-width: 40px">&nbsp;</th>
 			</tr>
 			<? $n = 1; if(!empty($questions)) foreach($questions as $question):?>
-				<?$id = $question['question_id']?>
-			<tr id="<?=$id?>">
+			<tr id="<?=$question['id']?>">
 				<td><?=$n++?>.</td>
 				<td><?=$question['question_text']?></td>
 				<td><?=$question['question_type']?></td>
-				<td><i class="icon-pencil"></i><i class="icon-trash"></i></td>
+				<td><a href="#" onclick="if(!confirm('Oled kindel?')) return false;
+						remove_question_ajax(<?= $question['id'] ?>); return false">
+						<i class="icon-trash"></i></td>
 			</tr>
 			<? endforeach ?>
 		</table>
@@ -57,7 +58,6 @@
 			<button name="vorminupp" class="btn btn btn-primary" type="button" onclick="add_question()
 			">Salvesta</button>
 		</div>
-		<div id="suvaline"></div>
 	</div>
 	<div id="tabs-3">
 		<table id="participants-table" class="table table-bordered table-striped" style="width: auto">
@@ -82,6 +82,12 @@
 		</table>
 	</div>
 </div>
+<div>
+	<?if (($get_last_id['MAX(id)']) == null){$last_id = '0';}else{$last_id = $get_last_id['MAX(id)'];};var_dump($last_id)?>
+</div>
 <script>
 	var id = '<?=$request->params[0]?>';
+</script>
+<script>
+	var question_id = '<?=$last_id?>';
 </script>

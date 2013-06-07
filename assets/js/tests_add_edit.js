@@ -48,29 +48,41 @@ function checkForm() {
 function save_test_changes() {
 	$('#test_edit_form').submit();
 }
+
 var question_no;
-var new_question_no = isNaN(parseInt(question_no, 10));
+var new_question_no;
+var new_question_id;
 function add_question() {
+	new_question_id = parseInt(question_id, 10)+1;
 	var selected_type = $('#question_type_id').val();
 	var question_type_id = $('#question_type_id option[value="'+selected_type+'"]').text();
 	var question_text = $('#question_text').val();
 	$.ajax({
 		type    : 'POST',
 		dataType: 'html',
-		data    : {questiontext: question_text, question_type_id: $('#question_type_id').val()},
+		data    : {questiontext: question_text, question_type_id: $('#question_type_id').val(), newquestionid: new_question_id},
 		url     : BASE_URL + 'tests/add_question/'+id,
 		complete: function (data) {
 			console.log(data);
 			if (data.responseText>0) {
 				$('#questions_table').each(function() {
-					question_no = ($(this).find("tr:last").find('td:first').html()).slice(0,-1);
-					new_question_no = new_question_no + 1;
+					if ((question_no = ($(this).find("tr:last").find('td:first').html())) !== undefined){
+						question_no = ($(this).find("tr:last").find('td:first').html()).slice(0,-1);
+					} else {
+						question_no = '0';
+					}
+					new_question_no = parseInt(question_no, 10)+1;
+					new_question_id = new_question_id+1;
 				});
 				if (question_text.length > 0) {
-					$("#questions_table").append('<tr><td>'+new_question_no+'.</td>'+
+					$("#questions_table").append('<tr id="'+new_question_id+'"><td>'+new_question_no+'.</td>'+
 						'<td>'+question_text+'</td>'+
 						'<td>'+question_type_id+'</td>'+
-						'<td><i class="icon-pencil"></i><i class="icon-trash"></i></td></tr>');
+						'<td><a href="#" onclick="if(!confirm('+ylakoma+'Oled kindel?'+ylakoma+')) return false; '+
+						'remove_question_ajax('+new_question_id+'); return false">'+
+						'<i class="icon-trash"></i></td></tr>');
+					question_id= parseInt(question_id, 10)+1;
+					new_question_id = new_question_id+1;
 				} else {
 					alert("Küsimuse nimi puudub!");
 				}
@@ -81,8 +93,23 @@ function add_question() {
 		}
 	})
 }
+function remove_question_ajax(id) {
+	$.post(BASE_URL + "tests/remove_question/" + id)
+		.done(function (data) {
+			if (data == 'OK') {
+				$('table#questions_table tr#' + id).remove();
+				alert("Test kustutatud");
+				for (var i=2; i<$('#questions_table tr').length+1; i++) {
+					var indeks = i;
+					var number = i-1;
+					$('#questions_table').find('tr:nth-child('+indeks+')').find('td:first').html(number+'.');
+				}
+			} else {
+				alert("Viga\n\nServer vastas: '" + data + "'.\n\nKontakteeru arendajaga.");
+			}
+		});
+}
 $(function () {
-
 	$('#question_type_id').bind('change', function (event) {
 		// change answer_option type
 		switch ($(this).val().trim()) {

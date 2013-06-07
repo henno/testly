@@ -26,6 +26,8 @@ class tests {
 		$test = get_all("SELECT * FROM test WHERE test_id='$id'");
 		$test = $test[0];
 		$questions = get_all("SELECT * FROM question NATURAL JOIN question_type WHERE test_id='$id'");
+		$get_last_id = get_all("SELECT MAX(id) FROM question");
+		$get_last_id = $get_last_id[0];
 		require 'views/master_view.php';
 	}
 	function add(){
@@ -45,11 +47,16 @@ class tests {
 		global $request;
 		$this->scripts[] = 'tests_add_edit.js';
 		$id = $request->params[0];
-		$question_text = $_POST['questiontext'];
+		$get_last_id = get_all("SELECT MAX(id) FROM question");
+		$get_last_id = $get_last_id[0]['MAX(id)'];
+		if ($get_last_id == null){$get_last_id = '0';};
+		$abi = $_POST['newquestionid'];
+		$questionid = ((int)$abi) + 1;
 		if($_POST['questiontext'] && $id){
+			$question_text = $_POST['questiontext'];
 			$question_type_id = $_POST['question_type_id'];
-			$question_id = insert("question", array('test_id'=>$id, 'question_text'=>$question_text,
-			                                        'question_type_id'=>$question_type_id));
+			$question_id = insert('question', array('test_id'=>$id, 'question_text'=>$question_text,
+			                                        'question_type_id'=>$question_type_id, 'id'=>$questionid));
 			echo $question_id>0 ? $question_id : 'FAIL';
 			exit();
 		}
@@ -57,5 +64,11 @@ class tests {
 		else{
 			exit('Küsimuse nimi puudub!');
 		}
+	}
+	function remove_question(){
+		global $request;
+		$id = $request->params[0];
+		$delete_question = q("DELETE FROM question WHERE id='$id'");
+		require 'views/master_view.php';
 	}
 }

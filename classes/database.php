@@ -91,7 +91,7 @@ function db_error_out($sql = NULL)
 	die();
 
 }
-insert()
+
 /**
  * @param $table string The name of the table to be inserted into.
  * @param $data array Array of data. For example: array('field1' => 'mystring', 'field2' => 3);

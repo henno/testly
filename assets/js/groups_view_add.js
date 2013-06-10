@@ -1,4 +1,4 @@
-function add_student() {
+function add_student(param) {
 	//retrieve comments to display on page
 	//add click handler for button
 	//define ajax config object
@@ -6,7 +6,7 @@ function add_student() {
 	{
 
 		type   : "post",
-		url    : BASE_URL + 'groups/selected/1',
+		url    : BASE_URL + 'groups/add/'+param,
 		data   : {student_name: document.getElementById('name').value,student_email: document.getElementById('email').value},
 		success: function (data) {
 			var input1=$("#name").val();

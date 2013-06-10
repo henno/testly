@@ -23,20 +23,22 @@ class groups {
 		$group_id = $request->params[0];
 		var_dump($group_id);
 		$students=get_all("SELECT * FROM `student` WHERE group_id='$group_id'");
-		if(isset($_POST['student_name'])&&isset($_POST['student_email'])):
-			$student_name=$_POST['student_name'];
-			$student_email=$_POST['student_email'];
-			var_dump($_POST['student']);
-			$student_id=insert('student',array('student_name'=>$student_name, 'group_id'=>$group_id,
-			                             'email'=>$student_email));
-		endif;
+
 		require 'views/master_view.php';
 
 	}
 	function add(){
+		global $request;
+		$group_id = $request->params[0];
 		if(isset($_POST['group'])):$group_name=$_POST['group'];
 			$group_id=insert('group', array('group_name'=>$group_name));
 		echo $group_id;
+		endif;
+		if(isset($_POST['student_name'])&&isset($_POST['student_email'])):
+			$student_name=$_POST['student_name'];
+			$student_email=$_POST['student_email'];
+			$student_id=insert('student',array('student_name'=>$student_name, 'group_id'=>$group_id,
+			                                   'email'=>$student_email));
 		endif;
 	}
 

@@ -19,8 +19,7 @@ function q($sql, & $query_pointer = NULL, $debug = FALSE){
 		case 'UPDA':
 			exit("q($sql): Please don't use q() for UPDATEs, use update() instead.");
 		default:
-			$query_pointer = mysql_query($sql) or db_error_out();
-			return mysql_num_rows($query_pointer);
+			return mysql_affected_rows();
 	}
 }
 
@@ -126,7 +125,7 @@ function update($table, $data,$where)
 		else{
 			$sql = "UPDATE {$table} SET {$values}";
 		}
-		$id = q($sql, $q);
+		$id = mysql_query($sql) or db_error_out();
 		return ($id > 0) ? $id : FALSE;
 	} else {
 		return FALSE;

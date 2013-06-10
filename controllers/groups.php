@@ -14,9 +14,7 @@ class groups {
 
 		$groups=get_all('SELECT COUNT(student_id) as "number", `group`.* FROM `group` NATURAL JOIN student GROUP BY group_id');
 
-		if(isset($_POST['group'])):$group_name=$_POST['group'];
-		$group_id=insert(group, array('group_name'=>$group_name));
-		endif;
+
 		require 'views/master_view.php';
 	}
 	function view(){
@@ -29,12 +27,17 @@ class groups {
 			$student_name=$_POST['student_name'];
 			$student_email=$_POST['student_email'];
 			var_dump($_POST['student']);
-			$student_id=insert('student',array('student_name'=>$student_name, 'group_id'=>$nupsu,
+			$student_id=insert('student',array('student_name'=>$student_name, 'group_id'=>$group_id,
 			                             'email'=>$student_email));
 		endif;
 		require 'views/master_view.php';
 
 	}
+	function add(){
+		if(isset($_POST['group'])):$group_name=$_POST['group'];
+			$group_id=insert('group', array('group_name'=>$group_name));
+		echo $group_id;
+		endif;
+	}
 
-
-}
+	}

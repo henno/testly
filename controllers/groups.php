@@ -12,19 +12,11 @@ class groups {
 		global $request;
 		$this->scripts[] = 'groups_index_add.js';
 
-		$groups=get_all("SELECT * FROM `group` GROUP BY group_id");
+		$groups=get_all('SELECT COUNT(student_id) as "number", `group`.* FROM `group` NATURAL JOIN student GROUP BY group_id');
 
-		if(isset($_POST["group"])):$group_name=$_POST["group"];
-		$group_id=q("INSERT INTO `group` SET group_name='$group_name'");
+		if(isset($_POST['group'])):$group_name=$_POST['group'];
+		$group_id=insert(group, array('group_name'=>$group_name));
 		endif;
-		if(!empty($groups)):foreach($groups as $group):
-		$numbers=get_all("SELECT COUNT(student_id) as 'number' FROM student WHERE student.group_id='$group[group_id]'");
-			$numbers=$numbers[0];
-			foreach($numbers as $number){
-				$group["number"]=[$number];
-			}
-
-	        endforeach;endif;
 		require 'views/master_view.php';
 	}
 	function selected(){
@@ -33,13 +25,12 @@ class groups {
 		$nupsu = $request->params[0];
 		var_dump($nupsu);
 		$students=get_all("SELECT * FROM `student` WHERE group_id='$nupsu'");
-		if(isset($_POST["student_name"])&&isset($_POST["student_email"])):
-			$student_name=$_POST["student_name"];
-			$student_email=$_POST["student_email"];
-			var_dump($_POST["student"]);
-		$student_query="student_name='$student_name', group_id='$nupsu',
-			email='$student_email'";
-			$student_id=insert("student",$student_query);
+		if(isset($_POST['student_name'])&&isset($_POST['student_email'])):
+			$student_name=$_POST['student_name'];
+			$student_email=$_POST['student_email'];
+			var_dump($_POST['student']);
+			$student_id=insert('student',array('student_name'=>$student_name, 'group_id'=>$nupsu,
+			                             'email'=>$student_email));
 		endif;
 		require 'views/master_view.php';
 

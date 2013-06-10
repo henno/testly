@@ -16,7 +16,7 @@ class tests {
 	function remove(){
 		global $request;
 		$id = $request->params[0];
-		$result = q("UPDATE test SET deleted=1 WHERE test_id='$id'");
+		$result = update( 'test',array(deleted=>1),"test_id='$id'");
 		require 'views/master_view.php';
 	}
 	function edit(){
@@ -34,7 +34,7 @@ class tests {
 		ob_end_clean();
 		$user_id = $_SESSION['user_id'];
 		if(isset($_POST['test_name'])){
-			$test_id = q("INSERT INTO test SET name='$_POST[test_name]', user_id='$user_id'");
+			$test_id = insert('test', array('name'=>$_POST['test_name'], 'user_id'=>$user_id));
 			echo $test_id>0 ? $test_id : 'FAIL';
 			exit();
 		}

@@ -14,6 +14,7 @@ function q($sql, & $query_pointer = NULL, $debug = FALSE){
 		case 'SELE':
 			exit("q($sql): Please don't use q() for SELECTs, use get_one() or get_first() or get_all() instead.");
 		case 'INSE':
+			debug_print_backtrace();
 			exit("q($sql): Please don't use q() for INSERTs, use insert() instead.");
 		case 'UPDA':
 			exit("q($sql): Please don't use q() for UPDATEs, use update() instead.");
@@ -105,7 +106,8 @@ function insert($table, $data)
 		}
 		$values = implode(',', $values);
 		$sql = "INSERT INTO `{$table}` SET {$values} ON DUPLICATE KEY UPDATE {$values}";
-		$id = q($sql, $q);
+		$q = mysql_query($sql)or db_error_out();
+		$id=mysql_insert_id();
 		return ($id > 0) ? $id : FALSE;
 	} else {
 		return FALSE;

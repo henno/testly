@@ -28,6 +28,8 @@ class tests {
 		$questions = get_all("SELECT * FROM question NATURAL JOIN question_type WHERE test_id='$id'");
 		$get_last_id = get_all("SELECT MAX(id) FROM question");
 		$get_last_id = $get_last_id[0];
+		$group_names = get_all("SELECT group_name FROM `group` WHERE deleted=0");
+		$test_groups = get_all("SELECT * FROM test_groups WHERE test_id='$id' AND deleted=0");
 		require 'views/master_view.php';
 	}
 	function add(){
@@ -64,6 +66,34 @@ class tests {
 		else{
 			exit('Küsimuse nimi puudub!');
 		}
+	}
+	function add_group(){
+		ob_end_clean();
+		global $request;
+		$this->scripts[] = 'tests_add_edit.js';
+		$id = $request->params[0];
+		$group_name = $_POST['group_name'];
+		$start_date = $_POST['group_start_date'];
+		$start_time = $_POST['group_start_time'];
+		$finish_date = $_POST['group_finish_date'];
+		$finish_time = $_POST['group_finish_time'];
+		if (!empty($group_name)){
+		$group_id = insert('test_groups', array('group_name'=>$group_name, 'start_date'=>$start_date,
+		                                        'start_time'=>$start_time, 'finish_date'=>$finish_date,
+		                                        'finish_time'=>$finish_time, 'test_id'=>$id));
+			echo $group_id > 0 ? $group_id : 'FAIL';
+			exit();
+		}
+	}
+	function removegroup(){
+		global $request;
+		$test_id = $request->params[0];
+		$id = $request->params[1];
+		$this->scripts[] = 'tests_add_edit.js';
+		$results = update('test_groups', array('deleted'=>1), "id='$id' AND test_id='$test_id'");
+		var_dump($results);
+		require 'views/master_view.php';
+
 	}
 	function remove_question(){
 		global $request;

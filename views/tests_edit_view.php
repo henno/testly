@@ -1,9 +1,11 @@
 <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/smoothness/jquery-ui.css"/>
+
 <script>
 	$(function() {
 		$( "#tabs" ).tabs();
 	});
 </script>
+
 <div style="clear: both; padding-bottom: 7px;">
 	<button class=" btn btn-primary" type="button" onclick="save_test_changes()">Salvesta</button>
 </div>
@@ -11,7 +13,7 @@
 	<ul>
 		<li><a href="#tabs-1">Üldine</a></li>
 		<li><a href="#tabs-2">Küsimused</a></li>
-		<li><a href="#tabs-3">Osalejad</a></li>
+		<li><a href="#tabs-3">Grupid</a></li>
 	</ul>
 	<div id="tabs-1">
 		<form method="post" id="test_edit_form">
@@ -58,26 +60,62 @@
 			<button name="vorminupp" class="btn btn btn-primary" type="button" onclick="add_question()
 			">Salvesta</button>
 		</div>
+		<div id="suvaline"></div>
 	</div>
 	<div id="tabs-3">
+		<div style="margin: 15px">
+			<form id="myform" method="post">
+				<table class="table table-bordered table-striped" style="width: 40%">
+					<tr>
+						<th>Grupp</th>
+						<th>Alustusaeg</th>
+						<th>Tähtaeg</th>
+					</tr>
+					<tr>
+						<td><select name="group_select">
+								<? if (isset($group_names)) : foreach ($group_names as $group_name) :?>
+								<option><?=$group_name['group_name']?></option>
+								<? endforeach; endif?>
+						</select>
+						</td>
+						<td>
+							<input name="group_start_date" type="date""><br>
+							<input name="group_start_time" type="time">
+						</td>
+						<td>
+							<input name="group_finish_date" type="date""><br>
+							<input name="group_finish_time" type="time">
+						</td>
+					</tr>
+				</table>
+
+			</form>
+			<button class="btn btn-primary" onclick="add_group()">Lisa uus grupp</button>
+
+		</div>
+		<input type="hidden" name="test_id" value="<?=$request->params[0];?>">
 		<table id="participants-table" class="table table-bordered table-striped" style="width: auto">
 			<thead>
 			<tr>
-				<th><input style="margin: 5px" type="checkbox">Vali kõik</th>
-				<th>Isik</th>
+				<th>Kustuta:</th>
 				<th>Grupp</th>
-				<th>Ajavahemik</th>
-				<th>Punktid</th>
+				<th>Alustusaeg</th>
+				<th>Tähtaeg</th>
 			</tr>
 			</thead>
 			<tbody>
-			<tr>
-				<td><input style="margin: 5px" type="checkbox"></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
+				<? if(!empty($test_groups)) : foreach($test_groups as $test_group) :?>
+					<tr id="group_row<?=$test_group['id']?>">
+						<td><a href="#" onclick="if(!confirm('Oled kindel?')) return false;
+								remove_group_ajax(<?= $test_group['id'] ?>); return false">
+								<i class="icon-trash"></i></td>
+						<td><?=$test_group['group_name']?></td>
+						<td>Kuupäev: <?=$test_group['start_date']?><br>
+						Kellaaeg: <?=$test_group['start_time']?></td>
+						<td>Kuupäev: <?=$test_group['finish_date']?><br>
+						Kellaaeg: <?=$test_group['finish_time']?></td>
+					</tr>
+				<? endforeach; endif?>
 			</tbody>
 		</table>
 	</div>
@@ -90,4 +128,4 @@
 </script>
 <script>
 	var question_id = '<?=$last_id?>';
-</script>
+</script></script>

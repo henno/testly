@@ -34,6 +34,7 @@ function removeMultipleResponse() {
 	}
 	return false;
 }
+
 function checkForm() {
 	var elements = $('#question_type_id_' + current_type_id + 'input[type=checkbox]:not(.shuffle_answers), #question_type_id_' + current_type_id + 'input[type=radio]:not(#shuffle)');
 	var textbox = $('#question_type_id_' + current_type_id + 'textarea');
@@ -93,6 +94,60 @@ function add_question() {
 		}
 	})
 }
+function add_group() {
+	var group_name = $('select[name="group_select"]').val();
+	var start_date = $('input[name="group_start_date"]').val()
+	var start_time = $('input[name="group_start_time"]').val()
+	var finish_date = $('input[name="group_finish_date"]').val()
+	var finish_time = $('input[name="group_finish_time"]').val()
+	var gid = "<?= $test_group['id'] ?>"
+	$.ajax({
+		type    : 'POST',
+		dataType: 'html',
+		data    : {
+			group_name: group_name,
+			group_start_date: start_date,
+			group_start_time: start_time,
+			group_finish_date: finish_date,
+			group_finish_time: finish_time
+		},
+		url     : BASE_URL + 'tests/add_group/'+id,
+		complete: function (data) {
+			if (!isNaN(data.responseText) && data.responseText > 0) {
+				if (group_name.length > 0){
+					var ylakoma = "'"
+					$("#participants-table").append(
+						'<tr><td><a href="#" onclick="if'+
+						'(!confirm('+ylakoma+'Oled kindel?'+ylakoma+')) return false;'+
+						'remove_group_ajax('+ylakoma+gid+ylakoma+')' +
+						';return false"><i class='+ylakoma+'icon-trash'+ylakoma+'></i></td>'+
+						'<td>'+group_name+'</td>'+
+						'<td>Kuup&aumlev: '+start_date+'<br>'+
+						'Kellaaeg: '+start_time+'</td>'+
+						'<td>Kuup&aumlev: '+finish_date+'<br>'+
+						'Kellaaeg: '+finish_time+'</td></tr>')
+				}
+			}
+
+			else {
+				alert("Viga grupi lisamisel testile!" + ' ' + data.responseText.replace(/<(?:.|\n)*?>/gm, ''));
+			}
+		}
+	})
+}
+function remove_group_ajax(id) {
+	var test_id = $('input[name="test_id"]').val();
+	$.post(BASE_URL + "tests/removegroup/"+test_id +"/" + id)
+		.done(function (data) {
+			if (data == 'OK') {
+				$('table#participants-table>tbody>tr#group_row' + id).remove();
+				alert("Grupp eemaldatud!")
+			} else {
+				console.log(data);
+				alert("Viga\n\nServer vastas: '" + data + "'.\n\nKontakteeru arendajaga.");
+			}
+		});
+}
 function remove_question_ajax(id) {
 	$.post(BASE_URL + "tests/remove_question/" + id)
 		.done(function (data) {
@@ -110,6 +165,7 @@ function remove_question_ajax(id) {
 		});
 }
 $(function () {
+
 	$('#question_type_id').bind('change', function (event) {
 		// change answer_option type
 		switch ($(this).val().trim()) {

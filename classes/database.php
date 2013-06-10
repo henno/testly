@@ -14,7 +14,7 @@ function q($sql, & $query_pointer = NULL, $debug = FALSE){
 		case 'SELE':
 			exit("q($sql): Please don't use q() for SELECTs, use get_one() or get_first() or get_all() instead.");
 		case 'INSE':
-			exit("q($sql): Please don't use q() for SELECTs, use get_one() or get_first() or get_all() instead.");
+			exit("q($sql): Please don't use q() for INSERTs, use insert() instead.");
 		case 'UPDA':
 			exit("q($sql): Please don't use q() for UPDATEs, use update() instead.");
 		default:

@@ -101,10 +101,10 @@ function insert($table, $data)
 {
 	if ($table and is_array($data) and ! empty($data)) {
 		foreach ($data as $field => $value) {
-			$values[] = "$field='".mysql_real_escape_string(trim($value))."'";
+			$values[] = "`$field`='".mysql_real_escape_string(trim($value))."'";
 		}
 		$values = implode(',', $values);
-		$sql = "INSERT INTO {$table} SET {$values} ON DUPLICATE KEY UPDATE {$values}";
+		$sql = "INSERT INTO `{$table}` SET {$values} ON DUPLICATE KEY UPDATE {$values}";
 		$id = q($sql, $q);
 		return ($id > 0) ? $id : FALSE;
 	} else {

@@ -24,7 +24,7 @@
 		<tr id="my_groups">
 			<td id="checkbox1"><input type="checkbox"></td>
 				<td id="group_name1" style="padding-left: 20px;padding-right: 50px">
-					<a href="<?BASE_URL?>groups/selected/<?=$group["group_id"]?>"><?=$group["group_name"]?></a> </td>
+					<a href="<?BASE_URL?>groups/view/<?=$group["group_id"]?>"><?=$group["group_name"]?></a> </td>
 			<td style="padding-left: 20px;padding-right: 50px"> <?if(!empty($group["number"])): echo $group["number"][0];endif;
 				?></td>
 		</tr>

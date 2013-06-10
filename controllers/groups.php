@@ -19,12 +19,12 @@ class groups {
 		endif;
 		require 'views/master_view.php';
 	}
-	function selected(){
+	function view(){
 		global $request;
-		$this->scripts[] = 'groups_selected_add.js';
-		$nupsu = $request->params[0];
-		var_dump($nupsu);
-		$students=get_all("SELECT * FROM `student` WHERE group_id='$nupsu'");
+		$this->scripts[] = 'groups_view_add.js';
+		$group_id = $request->params[0];
+		var_dump($group_id);
+		$students=get_all("SELECT * FROM `student` WHERE group_id='$group_id'");
 		if(isset($_POST['student_name'])&&isset($_POST['student_email'])):
 			$student_name=$_POST['student_name'];
 			$student_email=$_POST['student_email'];
@@ -35,5 +35,6 @@ class groups {
 		require 'views/master_view.php';
 
 	}
+
 
 }

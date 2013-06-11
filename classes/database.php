@@ -120,10 +120,10 @@ function update($table, $data,$where)
 		}
 		$values = implode(',', $values);
 		if (isset($where)){
-			$sql = "UPDATE {$table} SET {$values} WHERE {$where}";
+			$sql = "UPDATE `{$table}` SET {$values} WHERE {$where}";
 		}
 		else{
-			$sql = "UPDATE {$table} SET {$values}";
+			$sql = "UPDATE `{$table}` SET {$values}";
 		}
 		$id = mysql_query($sql) or db_error_out();
 		return ($id > 0) ? $id : FALSE;

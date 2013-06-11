@@ -45,7 +45,6 @@ class tests {
 		}
 	}
 	function add_question(){
-		ob_end_clean();
 		global $request;
 		$this->scripts[] = 'tests_add_edit.js';
 		$id = $request->params[0];

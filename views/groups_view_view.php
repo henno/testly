@@ -11,7 +11,8 @@
 		<input id="name" class="input-small" placeholder="Lisa nimi" type="text" ">
 		<input id="email" class="input-small" placeholder="Lisa e-mail" type="text"">
 	</form>
-	<button class="btn  btn-primary" onclick="add_student()" >Lisa õpilane</button>
+	<button class="btn  btn-primary" onclick="add_student(<?=$request->params[0];
+	?>)" >Lisa õpilane</button>
 
 </div>
 <div id="left" style="float: left; width: 400px;display: inline-block">
@@ -30,8 +31,8 @@
 	<?if(!empty($students)):foreach( $students as $student):?>
 		<tr>
 			<td><input type="checkbox" style="margin-top: -2px"></td>
-			<td style="padding-left: 20px;padding-right: 50px"> <?=$student["student_name"]?> </td>
-			<td style="padding-left: 20px;padding-right: 50px"> <?=$student["email"]?></td>
+			<td style="padding-left: 20px;padding-right: 50px" id="<?=$student['student_id']?>"> <?=$student["student_name"]?> </td>
+			<td style="padding-left: 20px;padding-right: 50px" id="<?=$student['student_id']?>"> <?=$student["email"]?></td>
 		</tr>
 	<?endforeach;endif?>
 	</tbody>

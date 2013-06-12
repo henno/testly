@@ -11,6 +11,7 @@ class groups {
 	function index(){
 		global $request;
 		$this->scripts[] = 'groups_index_add.js';
+		$this->scripts[] = 'groups_index_delete.js';
 
 		$groups=get_all('SELECT COUNT(student_id) as "number", `group`.* FROM `group` NATURAL JOIN student GROUP BY group_id');
 
@@ -41,5 +42,12 @@ class groups {
 			                                   'email'=>$student_email));
 		endif;
 	}
+	function delete(){
+		global $request;
+		if(isset($_POST['group_id'])&& is_array($_POST['group_id'])):
 
+			$delete_groups=implode(",",$_POST['group_id']);
+			$delete=update('group',array("deleted"=>1),"group_id IN($delete_groups)");
+endif;
+	}
 	}

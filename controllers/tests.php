@@ -75,12 +75,39 @@ class tests {
 		$start_time = $_POST['group_start_time'];
 		$finish_date = $_POST['group_finish_date'];
 		$finish_time = $_POST['group_finish_time'];
-		if (!empty($group_name)){
+		$existing_groups = get_one("SELECT group_name FROM test_groups WHERE deleted=0 AND test_id='$id'");
+		if (!empty($group_name) && !empty($start_date) && !empty($start_time) && !empty($finish_date) && !empty($finish_time)
+			&& $existing_groups !== $group_name){
 		$group_id = insert('test_groups', array('group_name'=>$group_name, 'start_date'=>$start_date,
 		                                        'start_time'=>$start_time, 'finish_date'=>$finish_date,
 		                                        'finish_time'=>$finish_time, 'test_id'=>$id));
 			echo $group_id > 0 ? $group_id : 'FAIL';
 			exit();
+		}
+		elseif (!empty($group_name) && empty($start_date) && !empty($start_time) && !empty($finish_date) && !empty
+		($finish_time) && $existing_groups !== $group_name){
+			echo "Alustuskuupäev puudu!";
+		}
+		elseif (!empty($group_name) && !empty($start_date) && empty($start_time) && !empty($finish_date) && !empty
+		($finish_time) && $existing_groups !== $group_name){
+			echo "Alustuskellaaeg puudu!";
+		}
+		elseif (!empty($group_name) && !empty($start_date) && !empty($start_time) && empty($finish_date) && !empty
+		($finish_time) && $existing_groups !== $group_name){
+			echo "Tähtaja kuupäev puudu!";
+		}
+		elseif (!empty($group_name) && !empty($start_date) && !empty($start_time) && !empty($finish_date) && empty
+		($finish_time) && $existing_groups !== $group_name){
+			echo "Tähtaja kellaaeg puudu!";
+		}
+		elseif(!empty($group_name) && !empty($start_date) && !empty($start_time) && !empty($finish_date) && !empty
+		($finish_time) && $existing_groups == $group_name){
+				echo "See grupp on juba lisatud!";
+
+
+		}
+		else{
+			echo "Kõik väljad tuleb täita!";
 		}
 	}
 	function removegroup(){

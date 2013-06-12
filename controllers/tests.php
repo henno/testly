@@ -33,7 +33,6 @@ class tests {
 		require 'views/master_view.php';
 	}
 	function add(){
-		ob_end_clean();
 		$user_id = $_SESSION['user_id'];
 		if(isset($_POST['test_name'])){
 			$test_id = insert('test', array('name'=>$_POST['test_name'], 'user_id'=>$user_id));
@@ -45,7 +44,6 @@ class tests {
 		}
 	}
 	function add_question(){
-		ob_end_clean();
 		global $request;
 		$this->scripts[] = 'tests_add_edit.js';
 		$id = $request->params[0];
@@ -98,7 +96,7 @@ class tests {
 	function remove_question(){
 		global $request;
 		$id = $request->params[0];
-		$delete_question = q("DELETE FROM question WHERE id='$id'");
-		require 'views/master_view.php';
+		echo q("DELETE FROM question WHERE id='$id'") === FALSE ? "FAIL" : "OK";
+		exit();
 	}
 }

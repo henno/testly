@@ -113,8 +113,8 @@ function add_group() {
 		},
 		url     : BASE_URL + 'tests/add_group/'+id,
 		complete: function (data) {
-			if (!isNaN(data.responseText) && data.responseText > 0) {
-				if (group_name.length > 0){
+				if (!isNaN(data.responseText) && data.responseText > 0) {
+					if (group_name.length > 0){
 					var ylakoma = "'"
 					$("#participants-table").append(
 						'<tr><td><a href="#" onclick="if'+
@@ -126,10 +126,14 @@ function add_group() {
 						'Kellaaeg: '+start_time+'</td>'+
 						'<td>Kuup&aumlev: '+finish_date+'<br>'+
 						'Kellaaeg: '+finish_time+'</td></tr>')
+					document.getElementById("myform").reset();
+						}
 				}
-			}
+
+
 
 			else {
+					document.getElementById("myform").reset();
 				alert("Viga grupi lisamisel testile!" + ' ' + data.responseText.replace(/<(?:.|\n)*?>/gm, ''));
 			}
 		}

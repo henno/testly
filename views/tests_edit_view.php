@@ -30,37 +30,55 @@
 	<div id="tabs-2">
 		<table id="questions_table" class="table table-bordered table-striped">
 			<tr>
-				<th>#</th>
+				<th>Nr</th>
 				<th style="min-width: 300px">Küsimus</th>
 				<th>Tüüp</th>
+				<th>Vastus/Vastused</th>
 				<th style="max-width: 40px">&nbsp;</th>
 			</tr>
+			<tr>
+				<td></td>
+				<td><textarea id="question_text"></textarea></td>
+				<td><select id="question_type_id">
+						<option value="1" selected="selected">Tõene/Väär</option>
+						<option value="2">Mitmikvalik</option>
+						<option value="3">Mitmikvastus</option>
+						<option value="4">Täida lüngad</option>
+					</select></td>
+				<td><div id="answer_options"></div></td>
+				<td><button class="btn btn btn-primary" type="button" onclick="add_question()">Salvesta</button></td>
+			</tr>
 			<? $n = 1; if(!empty($questions)) foreach($questions as $question):?>
-			<tr id="<?=$question['id']?>">
+			<tr class="numbered_row" id="<?=$question['id']?>">
 				<td><?=$n++?>.</td>
-				<td><?=$question['question_text']?></td>
-				<td><?=$question['question_type']?></td>
+				<td><a href="#" onclick="edit_question(<?=$question['id']?>)"><?=$question['question_text']?></a></td>
+				<td class="<?=$question['question_type_id']?>"><?=$question['question_type']?></td>
+				<?$question_id=$question['question_id'];
+				$answers = get_all("SELECT * FROM answer WHERE question_id='$question_id'");?>
+				<td><div id="answer_options_<?=$question['id']?>"><?if(!empty($answers)) foreach($answers as $answer){
+					if ($question['question_type_id']==1 || $question['question_type_id']==2) {
+						if ($answer['correct']==1){
+							echo '<div><input style="margin: 5px; margin-bottom: 9px" type="radio" checked="checked">'
+								.$answer['answer'].'</div>';
+						} else {
+							echo '<div><input style="margin: 5px; margin-bottom: 9px" type="radio">'
+								.$answer['answer'].'</div>';
+						}
+					} elseif ($question['question_type_id']==3){
+						if ($answer['correct']==1){
+							echo '<div><input style="margin: 5px; margin-bottom: 9px" type="checkbox" checked="checked">'
+								.$answer['answer'].'</div>';
+						} else {
+							echo '<div><input style="margin: 5px; margin-bottom: 9px" type="checkbox">'.$answer['answer'].'</div>';
+						}
+					}
+				}?></div></td>
 				<td><a href="#" onclick="if(!confirm('Oled kindel?')) return false;
 						remove_question_ajax(<?= $question['id'] ?>); return false">
 						<i class="icon-trash"></i></td>
 			</tr>
 			<? endforeach ?>
 		</table>
-		<label>Küsimus</label>
-		<textarea id="question_text"></textarea>
-		<label>Tüüp</label>
-		<select id="question_type_id">
-			<option value="1" selected="selected">Tõene/Väär</option>
-			<option value="2">Mitmikvalik</option>
-			<option value="3">Mitmikvastus</option>
-			<option value="4">Täida lüngad</option>
-		</select>
-			<div id="answer_options"></div>
-		<div style="clear: both; padding-bottom: 7px;">
-			<button name="vorminupp" class="btn btn btn-primary" type="button" onclick="add_question()
-			">Salvesta</button>
-		</div>
-		<div id="suvaline"></div>
 	</div>
 	<div id="tabs-3">
 		<div style="margin: 15px">
@@ -121,7 +139,7 @@
 	</div>
 </div>
 <div>
-	<?if (($get_last_id['MAX(id)']) == null){$last_id = '0';}else{$last_id = $get_last_id['MAX(id)'];};var_dump($last_id)?>
+	<?if (($get_last_id['MAX(id)']) == null){$last_id = '0';}else{$last_id = $get_last_id['MAX(id)'];}?>
 </div>
 <script>
 	var id = '<?=$request->params[0]?>';

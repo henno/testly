@@ -29,7 +29,7 @@ class tests {
 		$get_last_id = get_all("SELECT MAX(id) FROM question");
 		$get_last_id = $get_last_id[0];
 		$group_names = get_all("SELECT group_name FROM `group` WHERE deleted=0");
-		$test_groups = get_all("SELECT * FROM test_groups WHERE test_id='$id' AND deleted=0");
+		//$test_groups = get_all("SELECT * FROM test_groups WHERE test_id='$id' AND deleted=0");
 		require 'views/master_view.php';
 	}
 	function add(){
@@ -53,16 +53,22 @@ class tests {
 		$get_last_id = $get_last_id[0]['MAX(id)'];
 		if ($get_last_id == null){$get_last_id = '0';};
 		$abi = $_POST['newquestionid'];
-		$questionid = ((int)$abi) + 1;
-		if($_POST['questiontext'] && $id){
+		$questionid = (int)$abi;
+		if ($_POST['answer_keys'] && $_POST['answer_values']){
+			$answers_array = array_combine($_POST['answer_keys'], $_POST['answer_values']);
+		} else {
+			exit('Vastusteid peab olema vähemalt üks');
+		}
+		if($_POST['questiontext'] && $id && $answers_array){
 			$question_text = $_POST['questiontext'];
 			$question_type_id = $_POST['question_type_id'];
 			$question_id = insert('question', array('test_id'=>$id, 'question_text'=>$question_text,
 			                                        'question_type_id'=>$question_type_id, 'id'=>$questionid));
 			echo $question_id>0 ? $question_id : 'FAIL';
-			exit();
+			foreach ($answers_array as $k=>$v){
+				$answers = insert('answer', array('question_id'=>$question_id, 'answer'=>$k, 'correct'=>$v));
+			}
 		}
-
 		else{
 			exit('Küsimuse nimi puudub!');
 		}
@@ -85,6 +91,23 @@ class tests {
 			exit();
 		}
 	}
+	function edit_question(){
+		global $request;
+		$id = $request->params[0];
+		$question_id = get_one("SELECT question_id FROM question WHERE id='$id'");
+		if ($_POST['keys'] && $_POST['values']){
+			$answers_array = array_combine($_POST['keys'], $_POST['values']);
+		};
+		if($_POST['questiontext'] && $question_id && $answers_array){
+			$question_text = $_POST['questiontext'];
+			$edit_questions = update('question', array('question_text'=>$question_text), "id='$id'");
+			echo $edit_questions>0 ? $edit_questions : 'FAIL';
+			$delete_answers = q("DELETE FROM answer WHERE question_id='$question_id'");
+			foreach ($answers_array as $k=>$v){
+				$answers = insert('answer', array('question_id'=>$question_id ,'answer'=>$k, 'correct'=>$v));
+			}
+		} exit();
+	}
 	function removegroup(){
 		global $request;
 		$test_id = $request->params[0];
@@ -99,6 +122,7 @@ class tests {
 		global $request;
 		$id = $request->params[0];
 		$delete_question = q("DELETE FROM question WHERE id='$id'");
+		echo $delete_question>0 ? $delete_question : 'FAIL';
 		require 'views/master_view.php';
 	}
 }

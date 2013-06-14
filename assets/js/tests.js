@@ -3,7 +3,7 @@ function remove_test_ajax(id) {
 		.done(function (data) {
 			if (data == 'OK') {
 				$('table#tests-table>tbody>tr#test' + id).remove();
-				alert("Test kkustutatud")
+				alert("Test kustutatud")
 			} else {
 				alert("Viga\n\nServer vastas: '" + data + "'.\n\nKontakteeru arendajaga.");
 			}

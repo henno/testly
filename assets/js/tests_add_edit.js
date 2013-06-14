@@ -45,7 +45,7 @@ function removeMultipleResponse() {
 function add_textarea(id){
 	var type = $('tr#'+id+' #change_answer input:last').attr('type');
 	if (type == 'radio'){
-		$('tr#'+id+' #change_answer div:last').after('<div><input style="margin: 5px; margin-bottom: 9px" type="radio"><textarea></textarea></div>');
+		$('tr#'+id+' #change_answer div:last').after('<div><input style="margin: 5px; margin-bottom: 9px" type="radio" name="multiple_choice_'+id+'"><textarea></textarea></div>');
 	} else {
 		$('tr#'+id+' #change_answer div:last').after('<div><input style="margin: 5px; margin-bottom: 9px" type="checkbox"><textarea></textarea></div>');
 	}
@@ -235,7 +235,7 @@ function edit_question(id){
 		for (var index in answer_keys){
 			answers_obj[answer_keys[index]] = answer_values[index];
 		}
-	} alert(answer_keys);
+	}
 	JSON.stringify(answers_obj);
 	row.replaceWith('<tr class="numbered_row" id="'+id+'"><td>'+question_no+'</td>'+
 	'<td><textarea id="question_text">'+question_text+'</textarea></td>'+

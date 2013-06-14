@@ -147,6 +147,7 @@ class tests {
 		global $request;
 		$id = $request->params[0];
 		$delete_question = q("DELETE FROM question WHERE id='$id'");
+		echo $delete_question > 0 ? delete_question : 'FAIL';
 		require 'views/master_view.php';
 	}
 	function take()

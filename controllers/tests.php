@@ -9,7 +9,7 @@ class tests {
 		global $username;
 		$tests = get_all("SELECT * FROM test NATURAL JOIN user WHERE test.deleted=0");
 		$id = $_SESSION['user_id'];
-		$status = get_one("SELECT status FROM user WHERE user_id='$id'");
+		$role = get_one("SELECT status FROM user WHERE user_id='$id'");
 		require 'views/master_view.php';
 
 	}
@@ -148,5 +148,28 @@ class tests {
 		$id = $request->params[0];
 		$delete_question = q("DELETE FROM question WHERE id='$id'");
 		require 'views/master_view.php';
+	}
+	function take()
+	{
+		global $request;
+		$id = $request->params[0];
+		//siit võtan oma küsimused
+		$questions = get_all("SELECT * FROM question WHERE test_id='$id'");
+		if(isset($questions)): foreach ($questions as $question):
+			//siin saan iga küsimuse id, millele küsin kõik vastusevariandid
+			$id=$question['id'];
+			$answers = get_all("SELECT * FROM answer WHERE question_id='$id'");
+			//siin riputan saadud vastused question arraysse, et neid kuvataks hiljem samas tsüklikäigus
+		if(isset($answers)):foreach($answers as $answer):
+			$question[]=['answer'=>$answers];
+
+		endforeach;endif;
+
+		endforeach;endif;
+var_dump($question[0]['answer']);
+
+require 'views/master_view.php';
+
+
 	}
 }

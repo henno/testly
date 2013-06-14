@@ -11,9 +11,6 @@ function add_student(param) {
 		success: function (data) {
 			var input1=$("#name").val();
 			var input2=$("#email").val();
-
-			//	var group_id = '<?=$student_id?>';
-			//$('tbody').append.innerHTML ="<td>"+input+"</td>";
 			$("tbody").append('<tr><td><input type="checkbox"></td><td>'+input1+'</td>'+'<td>'+input2+'</td></tr>');
 			$("#name").val('');
 			$("#email").val('');

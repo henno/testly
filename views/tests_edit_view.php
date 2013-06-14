@@ -90,7 +90,7 @@
 						<th>Tähtaeg</th>
 					</tr>
 					<tr>
-						<td><select name="group_select">
+						<td><select id="group_select" name="group_select">
 								<? if (isset($group_names)) : foreach ($group_names as $group_name) :?>
 								<option><?=$group_name['group_name']?></option>
 								<? endforeach; endif?>
@@ -146,4 +146,4 @@
 </script>
 <script>
 	var question_id = '<?=$last_id?>';
-</script></script>
+</script>

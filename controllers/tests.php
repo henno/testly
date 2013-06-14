@@ -29,11 +29,10 @@ class tests {
 		$get_last_id = get_all("SELECT MAX(id) FROM question");
 		$get_last_id = $get_last_id[0];
 		$group_names = get_all("SELECT group_name FROM `group` WHERE deleted=0");
-		//$test_groups = get_all("SELECT * FROM test_groups WHERE test_id='$id' AND deleted=0");
+		$test_groups = get_all("SELECT * FROM test_groups WHERE test_id='$id' AND deleted=0");
 		require 'views/master_view.php';
 	}
 	function add(){
-		ob_end_clean();
 		$user_id = $_SESSION['user_id'];
 		if(isset($_POST['test_name'])){
 			$test_id = insert('test', array('name'=>$_POST['test_name'], 'user_id'=>$user_id));
@@ -45,7 +44,6 @@ class tests {
 		}
 	}
 	function add_question(){
-		ob_end_clean();
 		global $request;
 		$this->scripts[] = 'tests_add_edit.js';
 		$id = $request->params[0];
@@ -83,12 +81,39 @@ class tests {
 		$start_time = $_POST['group_start_time'];
 		$finish_date = $_POST['group_finish_date'];
 		$finish_time = $_POST['group_finish_time'];
-		if (!empty($group_name)){
+		$existing_groups = get_one("SELECT group_name FROM test_groups WHERE deleted=0 AND test_id='$id'");
+		if (!empty($group_name) && !empty($start_date) && !empty($start_time) && !empty($finish_date) && !empty($finish_time)
+			&& $existing_groups !== $group_name){
 		$group_id = insert('test_groups', array('group_name'=>$group_name, 'start_date'=>$start_date,
 		                                        'start_time'=>$start_time, 'finish_date'=>$finish_date,
 		                                        'finish_time'=>$finish_time, 'test_id'=>$id));
 			echo $group_id > 0 ? $group_id : 'FAIL';
 			exit();
+		}
+		elseif (!empty($group_name) && empty($start_date) && !empty($start_time) && !empty($finish_date) && !empty
+		($finish_time) && $existing_groups !== $group_name){
+			echo "Alustuskuupäev puudu!";
+		}
+		elseif (!empty($group_name) && !empty($start_date) && empty($start_time) && !empty($finish_date) && !empty
+		($finish_time) && $existing_groups !== $group_name){
+			echo "Alustuskellaaeg puudu!";
+		}
+		elseif (!empty($group_name) && !empty($start_date) && !empty($start_time) && empty($finish_date) && !empty
+		($finish_time) && $existing_groups !== $group_name){
+			echo "Tähtaja kuupäev puudu!";
+		}
+		elseif (!empty($group_name) && !empty($start_date) && !empty($start_time) && !empty($finish_date) && empty
+		($finish_time) && $existing_groups !== $group_name){
+			echo "Tähtaja kellaaeg puudu!";
+		}
+		elseif(!empty($group_name) && !empty($start_date) && !empty($start_time) && !empty($finish_date) && !empty
+		($finish_time) && $existing_groups == $group_name){
+				echo "See grupp on juba lisatud!";
+
+
+		}
+		else{
+			echo "Kõik väljad tuleb täita!";
 		}
 	}
 	function edit_question(){
@@ -122,7 +147,6 @@ class tests {
 		global $request;
 		$id = $request->params[0];
 		$delete_question = q("DELETE FROM question WHERE id='$id'");
-		echo $delete_question>0 ? $delete_question : 'FAIL';
 		require 'views/master_view.php';
 	}
 }

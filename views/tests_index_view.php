@@ -38,7 +38,11 @@
 	<tbody>
 	<?if (! empty ($tests)): foreach ($tests as $test): ?>
 		<tr id="test<?= $test['test_id'] ?>">
+			<?if(isset($role)&& $role=='teacher'):?>
 			<td id="name"><a href="/testly/tests/edit/<?= $test['test_id'] ?>"/><?=$test['name']?></td>
+			<?else:?>
+			<td id="name"><a href="/testly/tests/take/<?= $test['test_id'] ?>"/><?=$test['name']?></td>
+			<?endif;?>
 			<td id="username"><?=$test['username']?></td>
 			<td id="date"><?= substr($test['date'], 0, 10) ?></td>
 			<td id="delete">
